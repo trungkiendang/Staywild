@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="vi" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stay Wild Design System</title>
+<style>
+/*TOKENS:START*/
+/*  GENERATED từ design/tokens/tokens.json bằng design/tokens/build.mjs. KHÔNG SỬA TAY. */
+:root {
+  color-scheme: light;
+  --sw-ref-forest-50: #ECF5F2;
+  --sw-ref-forest-100: #D0E8E1;
+  --sw-ref-forest-200: #A6D1C6;
+  --sw-ref-forest-300: #75B3A4;
+  --sw-ref-forest-400: #4A9382;
+  --sw-ref-forest-500: #2F7766;
+  --sw-ref-forest-600: #1F5F51;
+  --sw-ref-forest-700: #174B40;
+  --sw-ref-forest-800: #113A32;
+  --sw-ref-forest-900: #0B2A24;
+  --sw-ref-forest-950: #061A16;
+  --sw-ref-clay-50: #FBF1EA;
+  --sw-ref-clay-100: #F6DFD0;
+  --sw-ref-clay-200: #EDBFA3;
+  --sw-ref-clay-300: #E19A72;
+  --sw-ref-clay-400: #D2774A;
+  --sw-ref-clay-500: #B95C30;
+  --sw-ref-clay-600: #9A4725;
+  --sw-ref-clay-700: #7A381E;
+  --sw-ref-clay-800: #5C2A17;
+  --sw-ref-clay-900: #3E1C10;
+  --sw-ref-stone-0: #FFFFFF;
+  --sw-ref-stone-25: #FAFAF6;
+  --sw-ref-stone-50: #F4F4EE;
+  --sw-ref-stone-100: #EAEBE3;
+  --sw-ref-stone-200: #DBDDD2;
+  --sw-ref-stone-300: #C3C6B8;
+  --sw-ref-stone-400: #A0A496;
+  --sw-ref-stone-500: #7C8174;
+  --sw-ref-stone-600: #5E6358;
+  --sw-ref-stone-700: #474C42;
+  --sw-ref-stone-800: #30342D;
+  --sw-ref-stone-900: #1F221C;
+  --sw-ref-stone-950: #131510;
+  --sw-ref-stone-1000: #0C0E0A;
+  --sw-ref-green-50: #E9F5EA;
+  --sw-ref-green-100: #CDE8CF;
+  --sw-ref-green-200: #A4D6A8;
+  --sw-ref-green-300: #78C07E;
+  --sw-ref-green-500: #2F8A36;
+  --sw-ref-green-600: #26702C;
+  --sw-ref-green-700: #1D5A23;
+  --sw-ref-green-800: #164519;
+  --sw-ref-green-900: #0E2E11;
+  --sw-ref-amber-50: #FFF7E0;
+  --sw-ref-amber-100: #FDEBB0;
+  --sw-ref-amber-200: #F9DB7A;
+  --sw-ref-amber-300: #F2C230;
+  --sw-ref-amber-500: #C58A00;
+  --sw-ref-amber-600: #9A6A00;
+  --sw-ref-amber-700: #7A5300;
+  --sw-ref-amber-800: #5C3E00;
+  --sw-ref-amber-900: #3F2B00;
+  --sw-ref-red-50: #FDECEA;
+  --sw-ref-red-100: #F9D0CB;
+  --sw-ref-red-200: #F4A9A1;
+  --sw-ref-red-300: #EE8A80;
+  --sw-ref-red-500: #D13B2E;
+  --sw-ref-red-600: #B3261E;
+  --sw-ref-red-700: #8E1D17;
+  --sw-ref-red-800: #6B1511;
+  --sw-ref-red-900: #4A0E0B;
+  --sw-ref-blue-50: #E7F2F7;
+  --sw-ref-blue-100: #C9E2EE;
+  --sw-ref-blue-200: #A2CDE2;
+  --sw-ref-blue-300: #7FB5D1;
+  --sw-ref-blue-500: #2B7BA3;
+  --sw-ref-blue-600: #1F6385;
+  --sw-ref-blue-700: #184E69;
+  --sw-ref-blue-800: #123C51;
+  --sw-ref-blue-900: #0D2B3B;
+
+  /* SOS: một bộ duy nhất, không đổi theo chế độ sáng/tối hay theme campaign */
+  --sw-sos-solid: #B3001B;
+  --sw-sos-solid-pressed: #8A0014;
+  --sw-sos-on-solid: #FFFFFF;
+  --sw-sos-surface: #FFF1F0;
+  --sw-sos-on-surface: #4A0008;
+  --sw-sos-border: #B3001B;
+  --sw-sos-received: #0E5A1E;
+  --sw-sos-on-received: #FFFFFF;
+  --sw-sos-pending: #FFD84D;
+  --sw-sos-on-pending: #2B2000;
+  --sw-sos-neutral: #2B2F28;
+  --sw-sos-on-neutral: #FFFFFF;
+  --sw-sos-ring: #FFFFFF;
+
+  /* Màu ngữ nghĩa - chế độ sáng (mặc định) */
+  --sw-color-bg-canvas: #FAFAF6;
+  --sw-color-bg-surface: #FFFFFF;
+  --sw-color-bg-raised: #FFFFFF;
+  --sw-color-bg-sunken: #EAEBE3;
+  --sw-color-bg-scrim: #131510A3;
+  --sw-color-text-primary: #1F221C;
+  --sw-color-text-secondary: #474C42;
+  --sw-color-text-tertiary: #5E6358;
+  --sw-color-text-disabled: #A0A496;
+  --sw-color-text-inverse: #FFFFFF;
+  --sw-color-text-link: #1F5F51;
+  --sw-color-border-subtle: #DBDDD2;
+  --sw-color-border-default: #C3C6B8;
+  --sw-color-border-input: #7C8174;
+  --sw-color-border-strong: #474C42;
+  --sw-color-brand-primary: #1F5F51;
+  --sw-color-brand-primary-hover: #174B40;
+  --sw-color-brand-primary-pressed: #113A32;
+  --sw-color-brand-on-primary: #FFFFFF;
+  --sw-color-brand-subtle: #ECF5F2;
+  --sw-color-brand-on-subtle: #113A32;
+  --sw-color-accent-solid: #9A4725;
+  --sw-color-accent-on-solid: #FFFFFF;
+  --sw-color-accent-subtle: #FBF1EA;
+  --sw-color-accent-on-subtle: #7A381E;
+  --sw-color-success-bg: #E9F5EA;
+  --sw-color-success-fg: #1D5A23;
+  --sw-color-success-border: #78C07E;
+  --sw-color-success-solid: #26702C;
+  --sw-color-success-on-solid: #FFFFFF;
+  --sw-color-warning-bg: #FFF7E0;
+  --sw-color-warning-fg: #5C3E00;
+  --sw-color-warning-border: #F2C230;
+  --sw-color-warning-solid: #F2C230;
+  --sw-color-warning-on-solid: #3F2B00;
+  --sw-color-error-bg: #FDECEA;
+  --sw-color-error-fg: #8E1D17;
+  --sw-color-error-border: #EE8A80;
+  --sw-color-error-solid: #B3261E;
+  --sw-color-error-on-solid: #FFFFFF;
+  --sw-color-info-bg: #E7F2F7;
+  --sw-color-info-fg: #184E69;
+  --sw-color-info-border: #7FB5D1;
+  --sw-color-info-solid: #1F6385;
+  --sw-color-info-on-solid: #FFFFFF;
+  --sw-color-focus-ring: #1F6385;
+
+  /* font */
+  --sw-font-family-sans: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif;
+  --sw-font-family-display: Fraunces, "Noto Serif", Georgia, serif;
+  --sw-font-family-system: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+  --sw-font-family-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --sw-font-weight-regular: 400;
+  --sw-font-weight-medium: 500;
+  --sw-font-weight-semibold: 600;
+  --sw-font-weight-bold: 700;
+  --sw-font-size-caption: 12px;
+  --sw-font-size-body-sm: 14px;
+  --sw-font-size-body: 16px;
+  --sw-font-size-h3: 18px;
+  --sw-font-size-h2: 22px;
+  --sw-font-size-h1: 28px;
+  --sw-font-size-display: 36px;
+  --sw-font-size-display-lg: 48px;
+
+  /* space */
+  --sw-space-0: 0px;
+  --sw-space-1: 4px;
+  --sw-space-2: 8px;
+  --sw-space-3: 12px;
+  --sw-space-4: 16px;
+  --sw-space-5: 20px;
+  --sw-space-6: 24px;
+  --sw-space-8: 32px;
+  --sw-space-10: 40px;
+  --sw-space-12: 48px;
+  --sw-space-16: 64px;
+  --sw-space-20: 80px;
+  --sw-space-0-5: 2px;
+
+  /* radius */
+  --sw-radius-none: 0px;
+  --sw-radius-xs: 4px;
+  --sw-radius-sm: 8px;
+  --sw-radius-md: 12px;
+  --sw-radius-lg: 16px;
+  --sw-radius-xl: 24px;
+  --sw-radius-full: 9999px;
+
+  /* shadow */
+  --sw-shadow-e1: 0px 1px 2px 0px #1F221C1F;
+  --sw-shadow-e2: 0px 2px 6px 0px #1F221C1F, 0px 1px 2px 0px #1F221C14;
+  --sw-shadow-e3: 0px 8px 20px -4px #1F221C29, 0px 2px 6px 0px #1F221C14;
+  --sw-shadow-e4: 0px 20px 40px -8px #1F221C3D, 0px 4px 12px 0px #1F221C1F;
+
+  /* elevation */
+  --sw-z-base: 0;
+  --sw-z-sticky: 100;
+  --sw-z-drawer: 200;
+  --sw-z-modal: 300;
+  --sw-z-toast: 400;
+  --sw-z-tooltip: 500;
+  --sw-z-sos: 1000;
+
+  /* motion */
+  --sw-motion-duration-instant: 80ms;
+  --sw-motion-duration-fast: 150ms;
+  --sw-motion-duration-base: 240ms;
+  --sw-motion-duration-slow: 400ms;
+  --sw-motion-duration-hold: 1500ms;
+  --sw-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --sw-motion-easing-decelerate: cubic-bezier(0, 0, 0, 1);
+  --sw-motion-easing-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --sw-motion-easing-emphasized: cubic-bezier(0.2, 0, 0, 1.2);
+
+  /* breakpoint */
+  --sw-breakpoint-compact: 0px;
+  --sw-breakpoint-sm: 600px;
+  --sw-breakpoint-md: 840px;
+  --sw-breakpoint-lg: 1200px;
+  --sw-breakpoint-xl: 1600px;
+
+  /* size */
+  --sw-size-touch-min: 44px;
+  --sw-size-touch-mobile: 48px;
+  --sw-size-touch-sos: 72px;
+  --sw-size-icon-sm: 16px;
+  --sw-size-icon-md: 20px;
+  --sw-size-icon-lg: 24px;
+  --sw-size-icon-xl: 32px;
+  --sw-size-control-sm: 32px;
+  --sw-size-control-md: 40px;
+  --sw-size-control-lg: 48px;
+  --sw-size-sos-button: 176px;
+  --sw-size-focus-ring: 2px;
+  --sw-size-content-max: 1280px;
+  --sw-size-reading-max: 680px;
+
+  /* opacity */
+  --sw-opacity-disabled: 0.4;
+  --sw-opacity-hover: 0.08;
+  --sw-opacity-pressed: 0.12;
+}
+
+:root[data-theme="light"] { color-scheme: light; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --sw-color-bg-canvas: #131510;
+    --sw-color-bg-surface: #1F221C;
+    --sw-color-bg-raised: #30342D;
+    --sw-color-bg-sunken: #0C0E0A;
+    --sw-color-bg-scrim: #000000B8;
+    --sw-color-text-primary: #F4F4EE;
+    --sw-color-text-secondary: #DBDDD2;
+    --sw-color-text-tertiary: #C3C6B8;
+    --sw-color-text-disabled: #5E6358;
+    --sw-color-text-inverse: #131510;
+    --sw-color-text-link: #A6D1C6;
+    --sw-color-border-subtle: #30342D;
+    --sw-color-border-default: #474C42;
+    --sw-color-border-input: #A0A496;
+    --sw-color-border-strong: #DBDDD2;
+    --sw-color-brand-primary: #75B3A4;
+    --sw-color-brand-primary-hover: #A6D1C6;
+    --sw-color-brand-primary-pressed: #D0E8E1;
+    --sw-color-brand-on-primary: #131510;
+    --sw-color-brand-subtle: #0B2A24;
+    --sw-color-brand-on-subtle: #D0E8E1;
+    --sw-color-accent-solid: #E19A72;
+    --sw-color-accent-on-solid: #131510;
+    --sw-color-accent-subtle: #3E1C10;
+    --sw-color-accent-on-subtle: #EDBFA3;
+    --sw-color-success-bg: #0E2E11;
+    --sw-color-success-fg: #A4D6A8;
+    --sw-color-success-border: #1D5A23;
+    --sw-color-success-solid: #78C07E;
+    --sw-color-success-on-solid: #0E2E11;
+    --sw-color-warning-bg: #3F2B00;
+    --sw-color-warning-fg: #F9DB7A;
+    --sw-color-warning-border: #7A5300;
+    --sw-color-warning-solid: #F2C230;
+    --sw-color-warning-on-solid: #3F2B00;
+    --sw-color-error-bg: #4A0E0B;
+    --sw-color-error-fg: #F4A9A1;
+    --sw-color-error-border: #8E1D17;
+    --sw-color-error-solid: #EE8A80;
+    --sw-color-error-on-solid: #4A0E0B;
+    --sw-color-info-bg: #0D2B3B;
+    --sw-color-info-fg: #A2CDE2;
+    --sw-color-info-border: #184E69;
+    --sw-color-info-solid: #7FB5D1;
+    --sw-color-info-on-solid: #0D2B3B;
+    --sw-color-focus-ring: #7FB5D1;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --sw-color-bg-canvas: #131510;
+  --sw-color-bg-surface: #1F221C;
+  --sw-color-bg-raised: #30342D;
+  --sw-color-bg-sunken: #0C0E0A;
+  --sw-color-bg-scrim: #000000B8;
+  --sw-color-text-primary: #F4F4EE;
+  --sw-color-text-secondary: #DBDDD2;
+  --sw-color-text-tertiary: #C3C6B8;
+  --sw-color-text-disabled: #5E6358;
+  --sw-color-text-inverse: #131510;
+  --sw-color-text-link: #A6D1C6;
+  --sw-color-border-subtle: #30342D;
+  --sw-color-border-default: #474C42;
+  --sw-color-border-input: #A0A496;
+  --sw-color-border-strong: #DBDDD2;
+  --sw-color-brand-primary: #75B3A4;
+  --sw-color-brand-primary-hover: #A6D1C6;
+  --sw-color-brand-primary-pressed: #D0E8E1;
+  --sw-color-brand-on-primary: #131510;
+  --sw-color-brand-subtle: #0B2A24;
+  --sw-color-brand-on-subtle: #D0E8E1;
+  --sw-color-accent-solid: #E19A72;
+  --sw-color-accent-on-solid: #131510;
+  --sw-color-accent-subtle: #3E1C10;
+  --sw-color-accent-on-subtle: #EDBFA3;
+  --sw-color-success-bg: #0E2E11;
+  --sw-color-success-fg: #A4D6A8;
+  --sw-color-success-border: #1D5A23;
+  --sw-color-success-solid: #78C07E;
+  --sw-color-success-on-solid: #0E2E11;
+  --sw-color-warning-bg: #3F2B00;
+  --sw-color-warning-fg: #F9DB7A;
+  --sw-color-warning-border: #7A5300;
+  --sw-color-warning-solid: #F2C230;
+  --sw-color-warning-on-solid: #3F2B00;
+  --sw-color-error-bg: #4A0E0B;
+  --sw-color-error-fg: #F4A9A1;
+  --sw-color-error-border: #8E1D17;
+  --sw-color-error-solid: #EE8A80;
+  --sw-color-error-on-solid: #4A0E0B;
+  --sw-color-info-bg: #0D2B3B;
+  --sw-color-info-fg: #A2CDE2;
+  --sw-color-info-border: #184E69;
+  --sw-color-info-solid: #7FB5D1;
+  --sw-color-info-on-solid: #0D2B3B;
+  --sw-color-focus-ring: #7FB5D1;
+}
+
+/* Kiểu chữ ghép */
+.sw-text-display-lg { font-family: Fraunces, "Noto Serif", Georgia, serif; font-size: 48px; font-weight: 600; line-height: 1.17; letter-spacing: -0.5px; }
+.sw-text-display { font-family: Fraunces, "Noto Serif", Georgia, serif; font-size: 36px; font-weight: 600; line-height: 1.22; letter-spacing: -0.25px; }
+.sw-text-h1 { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 28px; font-weight: 700; line-height: 1.29; letter-spacing: 0px; }
+.sw-text-h2 { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 22px; font-weight: 600; line-height: 1.36; letter-spacing: 0px; }
+.sw-text-h3 { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 18px; font-weight: 600; line-height: 1.44; letter-spacing: 0px; }
+.sw-text-body-lg { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; letter-spacing: 0px; }
+.sw-text-body { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.43; letter-spacing: 0px; }
+.sw-text-label { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 14px; font-weight: 600; line-height: 1.43; letter-spacing: 0.1px; }
+.sw-text-caption { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.5; letter-spacing: 0.2px; }
+.sw-text-sos { font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif; font-size: 18px; font-weight: 700; line-height: 1.33; letter-spacing: 0px; }
+.sw-text-sos-body { font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif; font-size: 16px; font-weight: 500; line-height: 1.5; letter-spacing: 0px; }
+
+/* Giảm chuyển động: tôn trọng cài đặt hệ điều hành (WCAG 2.3.3) */
+@media (prefers-reduced-motion: reduce) {
+  :root { --sw-motion-duration-fast: 0ms; --sw-motion-duration-base: 0ms; --sw-motion-duration-slow: 0ms; }
+}
+
+/*TOKENS:END*/
+/*UI:START*/
+/* Stay Wild UI nền tảng. Chỉ dùng biến --sw-*; không có giá trị màu/kích thước cứng. */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--sw-color-bg-canvas); color: var(--sw-color-text-primary); font-family: var(--sw-font-family-sans); font-size: var(--sw-font-size-body); line-height: 1.5; }
+:where(a, button, input, select, textarea, [tabindex]):focus-visible { outline: var(--sw-size-focus-ring) solid var(--sw-color-focus-ring); outline-offset: 2px; }
+.sw-sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.sw-skip-link { position: absolute; left: var(--sw-space-2); top: -100px; background: var(--sw-color-bg-surface); padding: var(--sw-space-2) var(--sw-space-4); border-radius: var(--sw-radius-sm); z-index: var(--sw-z-tooltip); }
+.sw-skip-link:focus { top: var(--sw-space-2); }
+
+/* Nút */
+.sw-btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--sw-space-2); min-height: var(--sw-size-control-md); min-width: var(--sw-size-touch-min); padding: 0 var(--sw-space-4); border: 1px solid transparent; border-radius: var(--sw-radius-sm); font: inherit; font-weight: var(--sw-font-weight-semibold); cursor: pointer; transition: background var(--sw-motion-duration-fast) var(--sw-motion-easing-standard), border-color var(--sw-motion-duration-fast) var(--sw-motion-easing-standard); }
+.sw-btn--sm { min-height: var(--sw-size-control-sm); padding: 0 var(--sw-space-3); font-size: var(--sw-font-size-body-sm); }
+.sw-btn--lg { min-height: var(--sw-size-control-lg); padding: 0 var(--sw-space-6); }
+.sw-btn--primary { background: var(--sw-color-brand-primary); color: var(--sw-color-brand-on-primary); }
+.sw-btn--primary:hover { background: var(--sw-color-brand-primary-hover); }
+.sw-btn--primary:active { background: var(--sw-color-brand-primary-pressed); }
+.sw-btn--secondary { background: var(--sw-color-bg-surface); color: var(--sw-color-text-primary); border-color: var(--sw-color-border-input); }
+.sw-btn--secondary:hover { background: var(--sw-color-bg-sunken); }
+.sw-btn--tertiary { background: transparent; color: var(--sw-color-text-link); }
+.sw-btn--tertiary:hover { background: var(--sw-color-brand-subtle); }
+.sw-btn--danger { background: var(--sw-color-error-solid); color: var(--sw-color-error-on-solid); }
+.sw-btn--danger:hover { filter: brightness(0.92); }
+.sw-btn:disabled { opacity: var(--sw-opacity-disabled); cursor: not-allowed; }
+.sw-btn.is-loading { cursor: progress; }
+.sw-spinner { width: var(--sw-size-icon-md); height: var(--sw-size-icon-md); border: 2px solid currentColor; border-right-color: transparent; border-radius: var(--sw-radius-full); animation: sw-spin 0.8s linear infinite; }
+@keyframes sw-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .sw-spinner { animation-duration: 2.4s; } .sw-skeleton { animation: none; } }
+
+/* Input */
+.sw-field { display: flex; flex-direction: column; gap: var(--sw-space-1); }
+.sw-field__label { font-weight: var(--sw-font-weight-semibold); font-size: var(--sw-font-size-body-sm); }
+.sw-field__hint { margin: 0; color: var(--sw-color-text-secondary); font-size: var(--sw-font-size-body-sm); }
+.sw-field__error { margin: 0; color: var(--sw-color-error-fg); font-size: var(--sw-font-size-body-sm); }
+.sw-input { min-height: var(--sw-size-control-lg); padding: 0 var(--sw-space-3); border: 1px solid var(--sw-color-border-input); border-radius: var(--sw-radius-sm); background: var(--sw-color-bg-surface); color: var(--sw-color-text-primary); font: inherit; }
+.sw-input::placeholder { color: var(--sw-color-text-tertiary); }
+.sw-input:disabled { opacity: var(--sw-opacity-disabled); cursor: not-allowed; }
+.has-error .sw-input { border-color: var(--sw-color-error-solid); border-width: 2px; }
+
+/* Thẻ */
+.sw-card { background: var(--sw-color-bg-surface); border-radius: var(--sw-radius-md); overflow: hidden; }
+.sw-card--outlined { border: 1px solid var(--sw-color-border-default); }
+.sw-card--raised { background: var(--sw-color-bg-raised); box-shadow: var(--sw-shadow-e2); }
+.sw-card.is-interactive:hover { box-shadow: var(--sw-shadow-e3); }
+.sw-card__body { padding: var(--sw-space-4); }
+.sw-card__media { background: var(--sw-color-bg-sunken); }
+
+/* Badge */
+.sw-badge { display: inline-flex; align-items: center; gap: var(--sw-space-1); padding: 0 var(--sw-space-2); min-height: var(--sw-space-6); border-radius: var(--sw-radius-full); font-size: var(--sw-font-size-caption); font-weight: var(--sw-font-weight-semibold); border: 1px solid transparent; }
+.sw-badge--neutral { background: var(--sw-color-bg-sunken); color: var(--sw-color-text-secondary); }
+.sw-badge--brand { background: var(--sw-color-brand-subtle); color: var(--sw-color-brand-on-subtle); }
+.sw-badge--accent { background: var(--sw-color-accent-subtle); color: var(--sw-color-accent-on-subtle); }
+.sw-badge--success { background: var(--sw-color-success-bg); color: var(--sw-color-success-fg); border-color: var(--sw-color-success-border); }
+.sw-badge--warning { background: var(--sw-color-warning-bg); color: var(--sw-color-warning-fg); border-color: var(--sw-color-warning-border); }
+.sw-badge--error { background: var(--sw-color-error-bg); color: var(--sw-color-error-fg); border-color: var(--sw-color-error-border); }
+.sw-badge--info { background: var(--sw-color-info-bg); color: var(--sw-color-info-fg); border-color: var(--sw-color-info-border); }
+.sw-badge__icon { font-weight: var(--sw-font-weight-bold); }
+
+/* Bảng */
+.sw-table-scroll { overflow-x: auto; border: 1px solid var(--sw-color-border-default); border-radius: var(--sw-radius-md); background: var(--sw-color-bg-surface); }
+.sw-table { width: 100%; border-collapse: collapse; font-size: var(--sw-font-size-body-sm); }
+.sw-table th, .sw-table td { padding: var(--sw-space-3) var(--sw-space-4); text-align: start; border-bottom: 1px solid var(--sw-color-border-subtle); }
+.sw-table th { background: var(--sw-color-bg-sunken); color: var(--sw-color-text-secondary); font-weight: var(--sw-font-weight-semibold); white-space: nowrap; }
+.sw-table .is-end { text-align: end; font-variant-numeric: tabular-nums; }
+.sw-table tbody tr:hover { background: var(--sw-color-brand-subtle); }
+.sw-table__sort { all: unset; cursor: pointer; font-weight: inherit; min-height: var(--sw-size-touch-min); display: inline-flex; align-items: center; }
+.sw-table__sort:focus-visible { outline: var(--sw-size-focus-ring) solid var(--sw-color-focus-ring); outline-offset: 2px; }
+.sw-table__empty { padding: var(--sw-space-8); text-align: center; color: var(--sw-color-text-secondary); }
+.sw-table__pager { display: flex; align-items: center; justify-content: flex-end; gap: var(--sw-space-3); padding-top: var(--sw-space-3); }
+.sw-skeleton { display: block; height: var(--sw-space-4); border-radius: var(--sw-radius-xs); background: linear-gradient(90deg, var(--sw-color-bg-sunken), var(--sw-color-border-subtle), var(--sw-color-bg-sunken)); background-size: 200% 100%; animation: sw-shimmer 1.4s linear infinite; }
+@keyframes sw-shimmer { to { background-position: -200% 0; } }
+
+/* Modal */
+.sw-modal-backdrop { position: fixed; inset: 0; z-index: var(--sw-z-modal); display: flex; align-items: center; justify-content: center; padding: var(--sw-space-4); background: var(--sw-color-bg-scrim); }
+.sw-modal { width: 100%; max-width: 32rem; max-height: calc(100vh - var(--sw-space-8)); overflow: auto; background: var(--sw-color-bg-raised); color: var(--sw-color-text-primary); border-radius: var(--sw-radius-lg); box-shadow: var(--sw-shadow-e4); padding: var(--sw-space-6); }
+.sw-modal--destructive { border-top: 4px solid var(--sw-color-error-solid); }
+.sw-modal__head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--sw-space-3); }
+.sw-modal__title { margin: 0; font-size: var(--sw-font-size-h2); line-height: 1.36; }
+.sw-modal__close { all: unset; cursor: pointer; min-width: var(--sw-size-touch-min); min-height: var(--sw-size-touch-min); display: inline-flex; align-items: center; justify-content: center; border-radius: var(--sw-radius-sm); }
+.sw-modal__close:focus-visible { outline: var(--sw-size-focus-ring) solid var(--sw-color-focus-ring); }
+.sw-modal__body { margin-top: var(--sw-space-3); }
+.sw-modal__actions { display: flex; justify-content: flex-end; gap: var(--sw-space-3); margin-top: var(--sw-space-6); flex-wrap: wrap; }
+
+/* Toast */
+.sw-toast-region { position: fixed; z-index: var(--sw-z-toast); inset-inline: var(--sw-space-4); bottom: var(--sw-space-4); display: flex; flex-direction: column; gap: var(--sw-space-2); align-items: flex-end; pointer-events: none; }
+.sw-toast { pointer-events: auto; display: flex; align-items: center; gap: var(--sw-space-3); max-width: 28rem; padding: var(--sw-space-3) var(--sw-space-4); border-radius: var(--sw-radius-md); background: var(--sw-color-text-primary); color: var(--sw-color-text-inverse); box-shadow: var(--sw-shadow-e3); }
+.sw-toast__icon { font-weight: var(--sw-font-weight-bold); }
+.sw-toast__action { all: unset; cursor: pointer; font-weight: var(--sw-font-weight-bold); text-decoration: underline; min-height: var(--sw-size-touch-min); display: inline-flex; align-items: center; }
+.sw-toast__close { all: unset; cursor: pointer; min-width: var(--sw-size-touch-min); min-height: var(--sw-size-touch-min); display: inline-flex; align-items: center; justify-content: center; }
+.sw-toast :is(.sw-toast__action, .sw-toast__close):focus-visible { outline: var(--sw-size-focus-ring) solid var(--sw-color-text-inverse); }
+
+@media (forced-colors: active) {
+  .sw-btn, .sw-input, .sw-card, .sw-badge { border: 1px solid CanvasText; }
+}
+
+/*UI:END*/
+/* ---- Riêng trang tổng quan ---- */
+body { line-height: 1.5; }
+.ix-wrap { max-width: 1120px; margin: 0 auto; padding: 0 var(--sw-space-4) var(--sw-space-20); }
+.ix-top { position: sticky; top: 0; z-index: var(--sw-z-sticky); background: var(--sw-color-bg-surface); border-bottom: 1px solid var(--sw-color-border-default); }
+.ix-top .ix-wrap { display: flex; align-items: center; gap: var(--sw-space-4); padding-block: var(--sw-space-3); flex-wrap: wrap; }
+.ix-mark { font-family: var(--sw-font-family-display); font-weight: 600; font-size: var(--sw-font-size-h2); color: var(--sw-color-brand-primary); margin-right: auto; }
+.ix-mark small { font-family: var(--sw-font-family-sans); font-size: var(--sw-font-size-caption); color: var(--sw-color-text-tertiary); margin-left: var(--sw-space-2); font-weight: 400; }
+.ix-nav { display: flex; gap: var(--sw-space-1); flex-wrap: wrap; }
+.ix-nav a { color: var(--sw-color-text-secondary); text-decoration: none; padding: var(--sw-space-2) var(--sw-space-3); border-radius: var(--sw-radius-sm); min-height: 44px; display: inline-flex; align-items: center; }
+.ix-nav a:hover { background: var(--sw-color-brand-subtle); color: var(--sw-color-brand-on-subtle); }
+.ix-seg { display: inline-flex; border: 1px solid var(--sw-color-border-input); border-radius: var(--sw-radius-sm); overflow: hidden; }
+.ix-seg button { all: unset; cursor: pointer; padding: 0 var(--sw-space-3); min-height: 44px; display: inline-flex; align-items: center; font-size: var(--sw-font-size-body-sm); }
+.ix-seg button[aria-pressed="true"] { background: var(--sw-color-brand-primary); color: var(--sw-color-brand-on-primary); }
+.ix-seg button:focus-visible { outline: 2px solid var(--sw-color-focus-ring); outline-offset: -2px; }
+.ix-hero { padding: var(--sw-space-12) 0 var(--sw-space-8); position: relative; }
+.ix-hero h1 { font-family: var(--sw-font-family-display); font-size: clamp(2rem, 6vw, 3rem); line-height: 1.17; margin: 0 0 var(--sw-space-3); font-weight: 600; letter-spacing: -0.5px; max-width: 18ch; }
+.ix-hero p { max-width: 62ch; color: var(--sw-color-text-secondary); font-size: var(--sw-font-size-body); }
+.ix-contour { position: absolute; inset: 0 0 auto auto; width: min(46%, 420px); height: 100%; opacity: .5; pointer-events: none; color: var(--sw-color-brand-primary); }
+.ix-status { display: inline-flex; gap: var(--sw-space-2); margin-top: var(--sw-space-3); flex-wrap: wrap; }
+section.ix { padding-top: var(--sw-space-12); scroll-margin-top: 80px; }
+section.ix > h2 { font-size: var(--sw-font-size-h1); margin: 0 0 var(--sw-space-2); line-height: 1.29; }
+section.ix > p.lead { color: var(--sw-color-text-secondary); margin: 0 0 var(--sw-space-6); max-width: 70ch; }
+h3.ix-h3 { font-size: var(--sw-font-size-h3); margin: var(--sw-space-8) 0 var(--sw-space-3); }
+.ix-grid { display: grid; gap: var(--sw-space-4); grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.ix-grid.wide { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+.ix-sw { border: 1px solid var(--sw-color-border-default); border-radius: var(--sw-radius-md); overflow: hidden; background: var(--sw-color-bg-surface); }
+.ix-sw i { display: block; height: 56px; border-bottom: 1px solid var(--sw-color-border-default); }
+.ix-sw div { padding: var(--sw-space-2) var(--sw-space-3); font-size: var(--sw-font-size-caption); }
+.ix-sw code { display: block; color: var(--sw-color-text-tertiary); word-break: break-all; }
+.ix-row { display: flex; flex-wrap: wrap; gap: var(--sw-space-3); align-items: center; }
+.ix-box { background: var(--sw-color-bg-surface); border: 1px solid var(--sw-color-border-default); border-radius: var(--sw-radius-md); padding: var(--sw-space-4); }
+.ix-ramp { display: flex; border-radius: var(--sw-radius-sm); overflow: hidden; border: 1px solid var(--sw-color-border-default); margin-bottom: var(--sw-space-3); }
+.ix-ramp span { flex: 1; height: 44px; display: flex; align-items: flex-end; justify-content: center; font-size: 10px; padding-bottom: 2px; }
+.ix-label { font-size: var(--sw-font-size-caption); color: var(--sw-color-text-tertiary); margin: 0 0 var(--sw-space-2); text-transform: none; }
+.ix-bubble { max-width: 85%; padding: var(--sw-space-3) var(--sw-space-4); border-radius: var(--sw-radius-lg); font-size: var(--sw-font-size-body); }
+.ix-bubble.me { background: var(--sw-color-brand-primary); color: var(--sw-color-brand-on-primary); margin-left: auto; border-bottom-right-radius: var(--sw-radius-xs); }
+.ix-bubble.ai { background: var(--sw-color-bg-surface); border: 1px solid var(--sw-color-border-default); border-bottom-left-radius: var(--sw-radius-xs); }
+.ix-bubble .src { margin-top: var(--sw-space-2); font-size: var(--sw-font-size-caption); color: var(--sw-color-text-secondary); border-top: 1px solid var(--sw-color-border-subtle); padding-top: var(--sw-space-2); }
+.ix-chat { display: flex; flex-direction: column; gap: var(--sw-space-3); }
+.ix-tl { list-style: none; margin: 0; padding: 0; border-inline-start: 2px solid var(--sw-color-border-default); }
+.ix-tl li { padding: 0 0 var(--sw-space-4) var(--sw-space-4); position: relative; }
+.ix-tl li::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--sw-color-brand-primary); border: 2px solid var(--sw-color-bg-surface); }
+.ix-tl time { font-weight: 600; font-size: var(--sw-font-size-body-sm); color: var(--sw-color-text-secondary); }
+.ix-banner { display: flex; gap: var(--sw-space-3); padding: var(--sw-space-3) var(--sw-space-4); border-radius: var(--sw-radius-md); border: 1px solid; align-items: flex-start; }
+.ix-banner b { display: block; }
+.ix-banner.warning { background: var(--sw-color-warning-bg); color: var(--sw-color-warning-fg); border-color: var(--sw-color-warning-border); }
+.ix-banner.info { background: var(--sw-color-info-bg); color: var(--sw-color-info-fg); border-color: var(--sw-color-info-border); }
+.ix-banner.success { background: var(--sw-color-success-bg); color: var(--sw-color-success-fg); border-color: var(--sw-color-success-border); }
+.ix-banner.error { background: var(--sw-color-error-bg); color: var(--sw-color-error-fg); border-color: var(--sw-color-error-border); }
+.ix-ph { aspect-ratio: 16/9; background: linear-gradient(135deg, var(--sw-color-brand-subtle), var(--sw-color-accent-subtle)); display: flex; align-items: center; justify-content: center; color: var(--sw-color-text-tertiary); font-size: var(--sw-font-size-caption); position: relative; overflow: hidden; }
+.ix-ph svg { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--sw-color-brand-primary); opacity: .35; }
+.ix-qr { display: grid; grid-template-columns: repeat(21, 1fr); width: 168px; aspect-ratio: 1; background: #fff; padding: 8px; border: 1px solid var(--sw-color-border-default); }
+.ix-qr b { background: #fff; } .ix-qr b.on { background: #111; }
+.ix-sos-zone { background: var(--sw-color-bg-canvas); border: 2px dashed var(--sw-color-border-strong); border-radius: var(--sw-radius-lg); padding: var(--sw-space-6); display: grid; gap: var(--sw-space-6); grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); align-items: start; justify-items: center; }
+.ix-sosbtn { all: unset; box-sizing: border-box; width: var(--sw-size-sos-button); height: var(--sw-size-sos-button); border-radius: 50%; background: var(--sw-sos-solid); color: var(--sw-sos-on-solid); border: 4px solid var(--sw-sos-ring); display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; position: relative; font-family: var(--sw-font-family-system); text-align: center; user-select: none; touch-action: none; }
+.ix-sosbtn:focus-visible { outline: 3px solid var(--sw-sos-ring); outline-offset: 4px; box-shadow: 0 0 0 7px var(--sw-sos-solid); }
+.ix-sosbtn b { font-size: 44px; line-height: 1; font-weight: 800; }
+.ix-sosbtn span { font-size: var(--sw-font-size-body); font-weight: 500; }
+.ix-sosbtn svg { position: absolute; inset: 4px; transform: rotate(-90deg); width: calc(100% - 8px); height: calc(100% - 8px); pointer-events: none; }
+.ix-sosbtn circle { fill: none; stroke: var(--sw-sos-ring); stroke-width: 8; stroke-dasharray: 100; stroke-dashoffset: 100; }
+.ix-sos-state { font-family: var(--sw-font-family-system); font-weight: 700; padding: var(--sw-space-3) var(--sw-space-4); border-radius: var(--sw-radius-md); text-align: center; min-width: 200px; }
+.ix-sos-state.pending { background: var(--sw-sos-pending); color: var(--sw-sos-on-pending); }
+.ix-sos-state.received { background: var(--sw-sos-received); color: var(--sw-sos-on-received); }
+.ix-sos-state.idle { background: var(--sw-sos-surface); color: var(--sw-sos-on-surface); border: 2px solid var(--sw-sos-border); }
+.ix-diff .add { background: var(--sw-color-success-bg); color: var(--sw-color-success-fg); padding: 2px var(--sw-space-2); border-radius: var(--sw-radius-xs); }
+.ix-diff .del { background: var(--sw-color-error-bg); color: var(--sw-color-error-fg); text-decoration: line-through; padding: 2px var(--sw-space-2); border-radius: var(--sw-radius-xs); }
+.ix-kpi { display: flex; flex-direction: column; gap: var(--sw-space-1); }
+.ix-kpi strong { font-size: var(--sw-font-size-h1); font-variant-numeric: tabular-nums; line-height: 1.2; }
+.ix-bars { display: flex; align-items: flex-end; gap: 6px; height: 72px; }
+.ix-bars i { flex: 1; background: var(--sw-color-brand-primary); border-radius: var(--sw-radius-xs) var(--sw-radius-xs) 0 0; opacity: .85; }
+.ix-bars i:nth-child(2n) { background: var(--sw-color-accent-solid); }
+.ix-pager { width: 100%; }
+table.ix-t { width: 100%; border-collapse: collapse; font-size: var(--sw-font-size-body-sm); }
+table.ix-t th, table.ix-t td { padding: var(--sw-space-2) var(--sw-space-3); border-bottom: 1px solid var(--sw-color-border-subtle); text-align: start; }
+.ix-modal-demo { background: var(--sw-color-bg-scrim); padding: var(--sw-space-6); border-radius: var(--sw-radius-md); }
+.ix-modal-demo .sw-modal { margin: 0 auto; }
+.ix-toast-demo { display: flex; flex-direction: column; gap: var(--sw-space-2); align-items: flex-start; }
+.ix-toast-demo .sw-toast { pointer-events: auto; }
+.ix-sheet { max-width: 360px; border: 1px solid var(--sw-color-border-default); border-radius: var(--sw-radius-xl) var(--sw-radius-xl) 0 0; background: var(--sw-color-bg-raised); box-shadow: var(--sw-shadow-e3); padding: var(--sw-space-2) var(--sw-space-4) var(--sw-space-4); }
+.ix-sheet::before { content: ""; display: block; width: 40px; height: 4px; border-radius: 2px; background: var(--sw-color-border-input); margin: var(--sw-space-2) auto var(--sw-space-3); }
+.ix-switch { display: inline-flex; align-items: center; gap: var(--sw-space-3); min-height: 44px; }
+.ix-switch input { appearance: none; width: 44px; height: 26px; border-radius: 13px; background: var(--sw-color-bg-sunken); border: 1px solid var(--sw-color-border-input); position: relative; cursor: pointer; }
+.ix-switch input::after { content: ""; position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%; background: var(--sw-color-text-secondary); transition: transform var(--sw-motion-duration-fast); }
+.ix-switch input:checked { background: var(--sw-color-brand-primary); border-color: var(--sw-color-brand-primary); }
+.ix-switch input:checked::after { transform: translateX(18px); background: var(--sw-color-brand-on-primary); }
+.ix-chip { display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--sw-space-4); border-radius: var(--sw-radius-full); border: 1px solid var(--sw-color-border-input); background: var(--sw-color-bg-surface); color: var(--sw-color-text-primary); font: inherit; cursor: pointer; }
+.ix-chip[aria-pressed="true"] { background: var(--sw-color-brand-subtle); color: var(--sw-color-brand-on-subtle); border-color: var(--sw-color-brand-primary); }
+.ix-chip[aria-pressed="true"]::before { content: "✓ "; }
+.ix-small { font-size: var(--sw-font-size-caption); color: var(--sw-color-text-tertiary); }
+.ix-stars { color: var(--sw-color-warning-fg); letter-spacing: 2px; }
+.ix-cnt { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--sw-space-2); }
+.ix-sp { display: flex; align-items: flex-end; gap: var(--sw-space-3); flex-wrap: wrap; }
+.ix-sp i { display: block; background: var(--sw-color-brand-primary); opacity: .7; }
+.ix-rd { width: 72px; height: 72px; background: var(--sw-color-brand-subtle); border: 2px solid var(--sw-color-brand-primary); display: flex; align-items: center; justify-content: center; font-size: 11px; color: var(--sw-color-brand-on-subtle); }
+.ix-sh { width: 96px; height: 72px; background: var(--sw-color-bg-raised); border-radius: var(--sw-radius-md); display: flex; align-items: center; justify-content: center; font-size: 11px; }
+footer.ix { margin-top: var(--sw-space-16); border-top: 1px solid var(--sw-color-border-default); padding-top: var(--sw-space-4); color: var(--sw-color-text-tertiary); font-size: var(--sw-font-size-caption); }
+</style>
+</head>
+<body>
+<a class="sw-skip-link" href="#main">Bỏ qua điều hướng</a>
+<header class="ix-top">
+  <div class="ix-wrap">
+    <div class="ix-mark">Stay Wild <small>Design System 0.1.0 · Đã đề xuất</small></div>
+    <nav class="ix-nav" aria-label="Mục lục trang">
+      <a href="#huong">Hướng thị giác</a><a href="#mau">Màu</a><a href="#chu">Chữ &amp; hình khối</a><a href="#nenTang">Nền tảng</a><a href="#mien">Thành phần miền</a><a href="#sos">SOS</a><a href="#quan-tri">Quản trị</a>
+    </nav>
+    <div class="ix-seg" role="group" aria-label="Chế độ hiển thị">
+      <button type="button" data-mode="light" aria-pressed="true">Sáng</button>
+      <button type="button" data-mode="dark" aria-pressed="false">Tối</button>
+      <button type="button" data-mode="auto" aria-pressed="false">Hệ thống</button>
+    </div>
+  </div>
+</header>
+<main id="main" class="ix-wrap">
+
+<div class="ix-hero" id="huong">
+  <svg class="ix-contour" viewBox="0 0 400 300" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+    <path d="M20 250C60 200 90 230 140 190S230 120 300 150 380 90 390 40"/><path d="M10 215C55 165 95 195 145 155S235 85 305 115 375 60 395 15"/><path d="M30 280C80 235 110 262 160 225S250 160 310 188 380 140 392 95"/><path d="M0 180C50 130 100 160 150 120S240 50 310 80 370 30 398 -10"/><ellipse cx="250" cy="70" rx="60" ry="26"/><ellipse cx="250" cy="70" rx="34" ry="14"/>
+  </svg>
+  <h1>Sổ tay bản đồ vùng cao</h1>
+  <p>Hướng thị giác đề xuất cho Stay Wild: rừng sâu, đất nung, nền giấy rêu; đường đồng mức làm họa tiết. Toàn giao diện được giữ "yên" để màu đỏ SOS luôn nổi bật tuyệt đối. Đây là <b>đề xuất</b>, chờ PO duyệt; wordmark tạm "Stay Wild", không logo bản quyền; dữ liệu và ảnh là giả lập.</p>
+  <div class="ix-status"><span class="sw-badge sw-badge--info"><span class="sw-badge__icon" aria-hidden="true">i</span>Đã đề xuất</span><span class="sw-badge sw-badge--brand">3 bề mặt: Admin · Portal · Mobile</span><span class="sw-badge sw-badge--neutral">WCAG 2.2 AA</span></div>
+</div>
+
+<section class="ix" id="mau">
+  <h2>Màu</h2>
+  <p class="lead">Màu gốc cố định; token ngữ nghĩa đổi theo chế độ sáng/tối (dùng nút ở đầu trang). Giá trị đọc trực tiếp từ biến CSS đang áp dụng.</p>
+  <h3 class="ix-h3">Bảng gốc</h3>
+  <div id="ramps"></div>
+  <h3 class="ix-h3">Ngữ nghĩa</h3>
+  <div class="ix-grid" id="semantic"></div>
+  <h3 class="ix-h3">SOS (một bộ duy nhất, không đổi theo chế độ)</h3>
+  <div class="ix-grid" id="sosSw"></div>
+</section>
+
+<section class="ix" id="chu">
+  <h2>Chữ và hình khối</h2>
+  <p class="lead">Be Vietnam Pro cho giao diện, Fraunces cho tiêu đề cảm xúc (Khách/Portal). Trang này dùng ngăn xếp dự phòng vì chưa bundle font; dấu tiếng Việt vẫn đầy đủ.</p>
+  <div class="ix-box">
+    <p class="sw-text-display-lg" style="margin:0">Hà Giang mùa lúa chín</p>
+    <p class="sw-text-display" style="margin:8px 0 0">Đà Lạt, sáng sớm trong sương</p>
+    <p class="sw-text-h1" style="margin:8px 0 0">Lịch trình 3 ngày ở Sa Pa</p>
+    <p class="sw-text-h2" style="margin:8px 0 0">Ngày 2: Bản Cát Cát và thác Bạc</p>
+    <p class="sw-text-h3" style="margin:8px 0 0">Trải nghiệm nhuộm chàm cùng người Mông</p>
+    <p class="sw-text-body-lg" style="margin:8px 0 0">Nội dung chính 16px: ườ, ượ, ặ, ẫ, ỵ — dấu chồng không chạm dòng trên. Giá từ 1.250.000 ₫ / khách.</p>
+    <p class="sw-text-body" style="margin:8px 0 0">Nội dung dày dữ liệu 14px cho bảng và Admin.</p>
+    <p class="sw-text-caption" style="margin:8px 0 0">Chú thích 12px (không dùng cho thông tin quan trọng).</p>
+  </div>
+  <h3 class="ix-h3">Khoảng cách · bo góc · đổ bóng</h3>
+  <div class="ix-box">
+    <p class="ix-label">Khoảng cách (lưới 4px)</p>
+    <div class="ix-sp" id="spaces"></div>
+    <p class="ix-label" style="margin-top:16px">Bo góc</p>
+    <div class="ix-row" id="radii"></div>
+    <p class="ix-label" style="margin-top:16px">Độ cao (đổ bóng e1 đến e4)</p>
+    <div class="ix-row" style="padding:12px;background:var(--sw-color-bg-canvas)" id="shadows"></div>
+  </div>
+</section>
+
+<section class="ix" id="nenTang">
+  <h2>Thành phần nền tảng</h2>
+  <p class="lead">Có mã mẫu web (<code>web-admin/components/ui</code>) và Flutter (<code>mobile/lib/design/components</code>); mọi thành phần khác có đặc tả ở <code>docs/design/components/</code>.</p>
+
+  <h3 class="ix-h3">Nút</h3>
+  <div class="ix-row">
+    <button class="sw-btn sw-btn--primary sw-btn--md" type="button">Gửi yêu cầu đặt</button>
+    <button class="sw-btn sw-btn--secondary sw-btn--md" type="button">Lưu nháp</button>
+    <button class="sw-btn sw-btn--tertiary sw-btn--md" type="button">Xem chi tiết</button>
+    <button class="sw-btn sw-btn--danger sw-btn--md" type="button">Hủy đặt chỗ</button>
+    <button class="sw-btn sw-btn--primary sw-btn--md" type="button" disabled>Vô hiệu</button>
+    <button class="sw-btn sw-btn--primary sw-btn--md is-loading" type="button" aria-busy="true"><span class="sw-spinner" aria-hidden="true"></span><span>Đang xử lý</span></button>
+  </div>
+
+  <h3 class="ix-h3">Ô nhập · chọn · công tắc · chip</h3>
+  <div class="ix-grid wide">
+    <div class="sw-field"><label class="sw-field__label" for="a1">Số điện thoại</label><p class="sw-field__hint">Bắt đầu bằng 0, đủ 10 chữ số.</p><input class="sw-input" id="a1" value="0901 234 567"></div>
+    <div class="sw-field has-error"><label class="sw-field__label" for="a2">Email</label><input class="sw-input" id="a2" value="khach@vi-du" aria-invalid="true" aria-describedby="a2e"><p class="sw-field__error" id="a2e"><span aria-hidden="true">✕ </span>Email thiếu phần tên miền, ví dụ ten@vidu.vn.</p></div>
+    <div><label class="ix-switch"><input type="checkbox" role="switch"> <span>Nhận thông báo cảnh báo thời tiết</span></label><br><div class="ix-row" style="margin-top:8px" role="group" aria-label="Lọc loại"><button class="ix-chip" aria-pressed="true" type="button">Trekking</button><button class="ix-chip" aria-pressed="false" type="button">Ẩm thực</button><button class="ix-chip" aria-pressed="false" type="button">Lưu trú</button></div></div>
+  </div>
+
+  <h3 class="ix-h3">Badge trạng thái</h3>
+  <div class="ix-row">
+    <span class="sw-badge sw-badge--neutral">Nháp</span><span class="sw-badge sw-badge--info"><span class="sw-badge__icon" aria-hidden="true">i</span>Chờ duyệt</span><span class="sw-badge sw-badge--warning"><span class="sw-badge__icon" aria-hidden="true">!</span>Chờ nhà cung cấp</span><span class="sw-badge sw-badge--success"><span class="sw-badge__icon" aria-hidden="true">✓</span>Đã xác nhận</span><span class="sw-badge sw-badge--error"><span class="sw-badge__icon" aria-hidden="true">✕</span>Quá hạn</span><span class="sw-badge sw-badge--accent">Người dân địa phương</span><span class="sw-badge sw-badge--brand">Đã xác minh</span>
+  </div>
+
+  <h3 class="ix-h3">Bảng dữ liệu</h3>
+  <div class="sw-table-scroll"><table class="sw-table"><caption class="sw-sr-only">Danh sách đặt chỗ (dữ liệu giả lập)</caption>
+    <thead><tr><th scope="col">Mã</th><th scope="col"><button class="sw-table__sort" type="button">Dịch vụ <span aria-hidden="true">▲</span></button></th><th scope="col">Trạng thái</th><th scope="col" class="is-end">Số tiền</th></tr></thead>
+    <tbody>
+      <tr><td>BK-0412</td><td>Lặn ngắm san hô</td><td><span class="sw-badge sw-badge--success"><span class="sw-badge__icon" aria-hidden="true">✓</span>Đã xác nhận</span></td><td class="is-end">1.250.000 ₫</td></tr>
+      <tr><td>BK-0413</td><td>Nhà nghỉ vườn chè</td><td><span class="sw-badge sw-badge--warning"><span class="sw-badge__icon" aria-hidden="true">!</span>Chờ thanh toán</span></td><td class="is-end">890.000 ₫</td></tr>
+      <tr><td>BK-0414</td><td>Học nấu bữa cơm bản</td><td><span class="sw-badge sw-badge--error"><span class="sw-badge__icon" aria-hidden="true">✕</span>Hết hạn</span></td><td class="is-end">320.000 ₫</td></tr>
+      <tr aria-hidden="true"><td><span class="sw-skeleton"></span></td><td><span class="sw-skeleton"></span></td><td><span class="sw-skeleton"></span></td><td><span class="sw-skeleton"></span></td></tr>
+    </tbody></table></div>
+
+  <h3 class="ix-h3">Modal · bottom sheet · toast</h3>
+  <div class="ix-grid wide">
+    <div class="ix-modal-demo"><div class="sw-modal sw-modal--destructive" role="group" aria-label="Minh họa hộp thoại"><div class="sw-modal__head"><h4 class="sw-modal__title" style="margin:0">Hủy đặt chỗ?</h4><span class="sw-modal__close" aria-hidden="true">✕</span></div><div class="sw-modal__body">Bạn sẽ được hoàn 50% theo chính sách Trung bình.</div><div class="sw-modal__actions"><button class="sw-btn sw-btn--secondary sw-btn--md" type="button">Giữ lại</button><button class="sw-btn sw-btn--danger sw-btn--md" type="button">Hủy đặt chỗ</button></div></div></div>
+    <div class="ix-sheet"><strong class="sw-text-h3">Bộ lọc</strong><div class="ix-row" style="margin:12px 0"><button class="ix-chip" aria-pressed="true" type="button">Dưới 1 triệu</button><button class="ix-chip" aria-pressed="false" type="button">Có chỗ</button></div><button class="sw-btn sw-btn--primary sw-btn--lg" style="width:100%" type="button">Xem 24 kết quả</button></div>
+    <div class="ix-toast-demo">
+      <div class="sw-toast sw-toast--success" role="status"><span class="sw-toast__icon" aria-hidden="true">✓</span><span>Đã lưu chuyến đi vào My Trip</span><span class="sw-toast__action">Hoàn tác</span></div>
+      <div class="sw-toast sw-toast--error" role="alert"><span class="sw-toast__icon" aria-hidden="true">✕</span><span>Không thanh toán được. Thử phương thức khác.</span><span class="sw-toast__close" aria-hidden="true">✕</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="ix" id="mien">
+  <h2>Thành phần miền</h2>
+  <p class="lead">Ảnh là khung giả lập; không dùng ảnh hay thương hiệu có bản quyền.</p>
+
+  <h3 class="ix-h3">Thẻ điểm đến · dịch vụ · đánh giá · cảnh báo</h3>
+  <div class="ix-grid wide">
+    <article class="sw-card sw-card--outlined is-interactive"><div class="sw-card__media"><div class="ix-ph"><svg viewBox="0 0 400 225" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 170C60 130 110 160 170 120S280 70 400 110"/><path d="M0 195C70 155 120 185 180 145S290 95 400 135"/><path d="M0 145C50 105 110 135 160 95S270 45 400 85"/></svg>Ảnh minh họa 16:9</div></div><div class="sw-card__body"><span class="sw-badge sw-badge--accent">Người dân địa phương</span><h4 class="sw-text-h3" style="margin:8px 0 4px">Học nhuộm chàm tại bản</h4><p class="sw-small ix-small" style="margin:0">Sa Pa · 3 giờ</p><p style="margin:8px 0 0"><span class="ix-stars" aria-hidden="true">★★★★☆</span> <span class="ix-small">4,6 trên 5 · 128 đánh giá</span></p><p style="margin:8px 0 0"><b>Từ 450.000 ₫</b> <span class="ix-small">/ khách</span></p></div></article>
+    <div style="display:grid;gap:12px;align-content:start">
+      <div class="ix-banner warning" role="region" aria-label="Cảnh báo"><span aria-hidden="true"><b>!</b></span><div><b>Cảnh báo cấp 2 · Mưa lớn</b>Sa Pa, hiệu lực 14/11 18:00 đến 15/11 12:00. Hạn chế đi suối. <a href="#sos" style="color:inherit">Xem hướng dẫn</a></div></div>
+      <div class="ix-banner info" role="status"><span aria-hidden="true"><b>i</b></span><div><b>Đang ngoại tuyến</b>Hiển thị dữ liệu đã lưu lúc 09:40. Cảnh báo có thể đã thay đổi.</div></div>
+      <div class="ix-banner error" role="alert"><span aria-hidden="true"><b>✕</b></span><div><b>Hết hạn thanh toán</b>Đặt chỗ BK-0414 đã hết hạn giữ chỗ. <a href="#mien" style="color:inherit">Đặt lại</a></div></div>
+    </div>
+    <div class="ix-box"><p class="ix-label">Vé QR (mẫu minh họa, không phải mã thật)</p><div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center"><div class="ix-qr" id="qr" role="img" aria-label="Mã QR minh họa"></div><div><b>Lặn ngắm san hô</b><br>14/11/2026 · 08:30<br>2 khách · BK-0412<br><span class="sw-badge sw-badge--info" style="margin-top:8px"><span class="sw-badge__icon" aria-hidden="true">i</span>Hiển thị ngoại tuyến</span></div></div></div>
+  </div>
+
+  <h3 class="ix-h3">Chat AI</h3>
+  <div class="ix-box ix-chat" style="max-width:560px">
+    <div class="ix-bubble me">Lên lịch 3 ngày ở Hà Giang cho 4 người, đi xe máy.</div>
+    <div class="ix-bubble ai"><div class="ix-small" style="margin-bottom:4px">✦ Trợ lý AI</div>Mình gợi ý Ngày 1 đi Quản Bạ và Yên Minh, nghỉ tại Đồng Văn [1]. Mình chưa có thông tin đã duyệt về giá xăng dọc đường.<div class="src"><b>Nguồn</b><br>[1] Điểm đến: Đồng Văn (đã duyệt)</div></div>
+    <div class="ix-row"><button class="ix-chip" type="button" aria-pressed="false">Thêm ngày thứ 4</button><button class="ix-chip" type="button" aria-pressed="false">Tránh đường đèo</button></div>
+    <p class="ix-small" style="margin:0">Nội dung do AI tạo, có thể chưa chính xác. Hãy kiểm tra giá, giờ mở cửa và cảnh báo an toàn trước khi đi.</p>
+  </div>
+
+  <h3 class="ix-h3">Lịch trình theo ngày</h3>
+  <div class="ix-box" style="max-width:560px">
+    <div class="ix-row" role="tablist" aria-label="Ngày" style="margin-bottom:12px"><button class="ix-chip" role="tab" aria-pressed="true" type="button">Ngày 1</button><button class="ix-chip" role="tab" aria-pressed="false" type="button">Ngày 2</button><button class="ix-chip" role="tab" aria-pressed="false" type="button">Ngày 3</button></div>
+    <ol class="ix-tl"><li><time>07:30</time><div>Cổng trời Quản Bạ <span class="sw-badge sw-badge--neutral">Gợi ý bởi AI</span></div></li><li><time>12:00</time><div>Bữa trưa tại Yên Minh <span class="sw-badge sw-badge--brand">Do bạn thêm</span></div></li><li><time>15:00</time><div>Nhà nghỉ Đồng Văn <span class="sw-badge sw-badge--success"><span class="sw-badge__icon" aria-hidden="true">✓</span>Đã đặt</span></div></li></ol>
+  </div>
+
+  <h3 class="ix-h3">Đồng ý theo mục đích (Consent)</h3>
+  <div class="ix-box" style="max-width:560px">
+    <p class="sw-text-h3" style="margin:0 0 4px">Quyền riêng tư của bạn</p>
+    <p class="ix-small" style="margin:0 0 12px">Văn bản mẫu, chưa phải nội dung pháp lý (cần xác minh pháp lý).</p>
+    <div class="ix-box" style="margin-bottom:8px"><div class="ix-row" style="justify-content:space-between"><div><b>Thiết yếu</b><div class="ix-small">Cần để ứng dụng và SOS hoạt động. Luôn bật.</div></div><span class="sw-badge sw-badge--neutral">Luôn bật</span></div></div>
+    <div class="ix-box" style="margin-bottom:8px"><label class="ix-switch" style="width:100%;justify-content:space-between"><span><b>Phân tích để cải thiện ứng dụng</b><span class="ix-small" style="display:block">Ẩn danh hóa, không bán dữ liệu.</span></span><input type="checkbox" role="switch" aria-label="Phân tích"></label></div>
+    <div class="ix-box" style="margin-bottom:12px"><label class="ix-switch" style="width:100%;justify-content:space-between"><span><b>Tiếp thị</b><span class="ix-small" style="display:block">Gợi ý và ưu đãi phù hợp.</span></span><input type="checkbox" role="switch" aria-label="Tiếp thị"></label></div>
+    <div class="ix-row"><button class="sw-btn sw-btn--secondary sw-btn--lg" type="button" style="flex:1">Chỉ dùng thiết yếu</button><button class="sw-btn sw-btn--secondary sw-btn--lg" type="button" style="flex:1">Chấp nhận đã chọn</button></div>
+  </div>
+</section>
+
+<section class="ix" id="sos">
+  <h2>SOS và khu vực an toàn</h2>
+  <p class="lead">Khung nét đứt bên dưới <b>không đổi màu</b> khi chuyển sáng/tối. Thử: giữ nút (hoặc Space/Enter) trong 1,5 giây. Thời gian giữ ở sản phẩm thật lấy từ Registry; đây chỉ là minh họa, không gửi gì cả.</p>
+  <div class="ix-sos-zone">
+    <div style="text-align:center"><button class="ix-sosbtn" id="sosBtn" type="button" aria-describedby="sosHint"><svg viewBox="0 0 36 36" aria-hidden="true"><circle id="sosRing" cx="18" cy="18" r="15.9155" pathLength="100"/></svg><b>SOS</b><span>Giữ để gửi</span></button><p id="sosHint" class="ix-small" style="color:inherit;margin-top:12px">Giữ 1,5 giây để gửi (minh họa)</p></div>
+    <div style="display:grid;gap:12px;justify-items:center;width:100%"><div class="ix-sos-state idle">Sẵn sàng</div><div class="ix-sos-state pending">Đã gửi lúc 14:32</div><div class="ix-sos-state received">Đã được tiếp nhận</div></div>
+    <div class="ix-box" style="width:100%"><b>Chưa gửi được</b><p style="margin:8px 0">Đang thử lại. Nếu khẩn cấp, hãy gọi trực tiếp:</p><div class="ix-row"><a class="sw-btn sw-btn--secondary sw-btn--lg" href="tel:113">Gọi 113</a><a class="sw-btn sw-btn--secondary sw-btn--lg" href="tel:115">Gọi 115</a></div></div>
+  </div>
+  <h3 class="ix-h3">Bảng ca trực (Safety Center)</h3>
+  <div class="ix-box"><table class="ix-t"><caption class="sw-sr-only">Lịch ca trực SOS tỉnh mẫu</caption><thead><tr><th scope="col">Ca</th><th scope="col">Người trực</th><th scope="col">Trạng thái phủ</th></tr></thead><tbody><tr><td>06:00 đến 14:00</td><td>Nhóm A (giả lập)</td><td><span class="sw-badge sw-badge--success"><span class="sw-badge__icon" aria-hidden="true">✓</span>Đủ người</span></td></tr><tr><td>14:00 đến 22:00</td><td>Nhóm B (giả lập)</td><td><span class="sw-badge sw-badge--success"><span class="sw-badge__icon" aria-hidden="true">✓</span>Đủ người</span></td></tr><tr><td>22:00 đến 06:00</td><td>Chưa gán</td><td><span class="sw-badge sw-badge--error"><span class="sw-badge__icon" aria-hidden="true">✕</span>Trống 8 giờ</span></td></tr></tbody></table></div>
+</section>
+
+<section class="ix" id="quan-tri">
+  <h2>Quản trị</h2>
+  <div class="ix-grid wide">
+    <div class="ix-box ix-diff"><p class="ix-label">Ô duyệt kiểm duyệt · so sánh thay đổi</p><p style="margin:0 0 8px"><b>Mô tả:</b> Trải nghiệm <span class="del">nửa ngày</span> <span class="add">cả ngày</span> tại bản.</p><p style="margin:0 0 12px"><b>Giá:</b> <span class="del">350.000 ₫</span> <span class="add">450.000 ₫</span></p><label class="sw-field__label" for="rs">Lý do (khi từ chối)</label><input class="sw-input" id="rs" style="width:100%" placeholder="Chọn lý do chuẩn và ghi chú"><div class="sw-modal__actions"><button class="sw-btn sw-btn--secondary sw-btn--md" type="button">Từ chối</button><button class="sw-btn sw-btn--primary sw-btn--md" type="button">Duyệt</button></div></div>
+    <div class="ix-box"><p class="ix-label">Trình soạn Registry (minh họa)</p><b>CFG-004 · Hạn thanh toán sau khi Provider xác nhận</b><div class="ix-row" style="margin:8px 0"><span class="sw-badge sw-badge--neutral">Seed 60 phút</span><span class="sw-badge sw-badge--info"><span class="sw-badge__icon" aria-hidden="true">i</span>Cần duyệt hai bước</span></div><div class="sw-field"><label class="sw-field__label" for="cv">Giá trị mới (phút)</label><input class="sw-input" id="cv" value="90"></div><p class="ix-small" style="margin:8px 0">Phạm vi: Toàn hệ thống · Hiệu lực: 01/12/2026 00:00 (GMT+7)</p><div class="ix-row"><button class="sw-btn sw-btn--secondary sw-btn--md" type="button">Xem tác động</button><button class="sw-btn sw-btn--primary sw-btn--md" type="button">Gửi duyệt</button></div></div>
+    <div class="ix-box ix-kpi"><p class="ix-label" style="margin:0">Doanh thu tuần (giả lập)</p><strong>128.450.000 ₫</strong><span class="sw-badge sw-badge--success"><span class="sw-badge__icon" aria-hidden="true">✓</span>▲ 12% so với tuần trước</span><div class="ix-bars" role="img" aria-label="Biểu đồ cột 7 ngày, tăng dần cuối tuần"><i style="height:30%"></i><i style="height:42%"></i><i style="height:38%"></i><i style="height:55%"></i><i style="height:61%"></i><i style="height:80%"></i><i style="height:92%"></i></div><span class="ix-small">Cập nhật 10:05 · xem dạng bảng</span></div>
+  </div>
+</section>
+
+<footer class="ix">Stay Wild Design System 0.1.0 · Đã đề xuất, chờ PO duyệt · Token: <code>design/tokens/tokens.json</code> · Dữ liệu và ảnh trong trang là giả lập.</footer>
+</main>
+<script>
+(function(){
+  var root = document.documentElement, KEY = "sw-ix-theme";
+  function setMode(m){
+    if (m === "auto") root.removeAttribute("data-theme"); else root.setAttribute("data-theme", m);
+    document.querySelectorAll(".ix-seg button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.mode === m)); });
+    try { localStorage.setItem(KEY, m); } catch (e) {}
+    setTimeout(paint, 30);
+  }
+  document.querySelectorAll(".ix-seg button").forEach(function(b){ b.addEventListener("click", function(){ setMode(b.dataset.mode); }); });
+  var saved = null; try { saved = localStorage.getItem(KEY); } catch (e) {}
+  if (saved) setMode(saved);
+  var mq = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)"); if (mq && mq.addEventListener) mq.addEventListener("change", function(){ setTimeout(paint, 30); });
+
+  function v(n){ return getComputedStyle(root).getPropertyValue(n).trim(); }
+  function sw(name, cls){ return '<div class="ix-sw"><i style="background:var('+name+')"></i><div>'+name.replace("--sw-","")+'<code>'+v(name)+'</code></div></div>'; }
+  var groups = {forest:[50,100,200,300,400,500,600,700,800,900,950], clay:[50,100,200,300,400,500,600,700,800,900], stone:[0,25,50,100,200,300,400,500,600,700,800,900,950,1000], green:[50,100,200,300,500,600,700,800,900], amber:[50,100,200,300,500,600,700,800,900], red:[50,100,200,300,500,600,700,800,900], blue:[50,100,200,300,500,600,700,800,900]};
+  var sem = ["bg-canvas","bg-surface","bg-raised","bg-sunken","text-primary","text-secondary","text-tertiary","text-link","border-default","border-input","brand-primary","brand-primary-hover","brand-subtle","brand-on-subtle","accent-solid","accent-subtle","success-bg","success-fg","warning-bg","warning-fg","error-bg","error-fg","info-bg","info-fg","focus-ring"];
+  var sos = ["solid","solid-pressed","on-solid","surface","on-surface","received","pending","neutral","ring"];
+  function paint(){
+    var r = "";
+    Object.keys(groups).forEach(function(g){ r += '<p class="ix-label">'+g+'</p><div class="ix-ramp">'+groups[g].map(function(n){ return '<span style="background:var(--sw-ref-'+g+'-'+n+')" title="'+g+' '+n+': '+v("--sw-ref-"+g+"-"+n)+'"></span>'; }).join("")+'</div>'; });
+    document.getElementById("ramps").innerHTML = r;
+    document.getElementById("semantic").innerHTML = sem.map(function(n){ return sw("--sw-color-"+n); }).join("");
+    document.getElementById("sosSw").innerHTML = sos.map(function(n){ return sw("--sw-sos-"+n); }).join("");
+    var sp = [1,2,3,4,6,8,12,16], h=""; sp.forEach(function(n){ h += '<div style="text-align:center"><i style="width:'+v("--sw-space-"+n)+';height:'+v("--sw-space-"+n)+'"></i><div class="ix-small">'+n*4+'</div></div>'; }); document.getElementById("spaces").innerHTML = h;
+    document.getElementById("radii").innerHTML = ["xs","sm","md","lg","xl","full"].map(function(n){ return '<div class="ix-rd" style="border-radius:var(--sw-radius-'+n+')">'+n+'</div>'; }).join("");
+    document.getElementById("shadows").innerHTML = ["e1","e2","e3","e4"].map(function(n){ return '<div class="ix-sh" style="box-shadow:var(--sw-shadow-'+n+')">'+n+'</div>'; }).join("");
+  }
+  paint();
+  /* QR minh họa (ngẫu nhiên xác định, không mã hóa gì) */
+  var q = document.getElementById("qr"), s = 7, cells = "";
+  for (var i = 0; i < 441; i++){ s = (s * 1103515245 + 12345) & 0x7fffffff; var x = i % 21, y = Math.floor(i / 21);
+    var finder = (x < 7 && y < 7) || (x > 13 && y < 7) || (x < 7 && y > 13);
+    var on = finder ? (function(a,b){ a = a > 13 ? a - 14 : a; b = b > 13 ? b - 14 : b; return a === 0 || a === 6 || b === 0 || b === 6 || (a > 1 && a < 5 && b > 1 && b < 5); })(x, y) : (s >> 9) % 2 === 0;
+    cells += '<b class="' + (on ? "on" : "") + '"></b>'; }
+  q.innerHTML = cells;
+  /* Demo giữ SOS: không gọi mạng, không gửi gì */
+  var btn = document.getElementById("sosBtn"), ring = document.getElementById("sosRing"), HOLD = 1500, t0 = 0, raf = 0;
+  function tick(){ var p = Math.min(1, (performance.now() - t0) / HOLD); ring.style.strokeDashoffset = String(100 - p * 100); if (p >= 1){ done(); return; } raf = requestAnimationFrame(tick); }
+  function start(){ if (raf) return; t0 = performance.now(); raf = requestAnimationFrame(tick); }
+  function stop(){ cancelAnimationFrame(raf); raf = 0; ring.style.strokeDashoffset = "100"; }
+  function done(){ raf = 0; ring.style.strokeDashoffset = "100"; btn.querySelector("span").textContent = "Đã kích hoạt (minh họa)"; setTimeout(function(){ btn.querySelector("span").textContent = "Giữ để gửi"; }, 2200); }
+  btn.addEventListener("pointerdown", function(e){ e.preventDefault(); start(); });
+  ["pointerup","pointerleave","pointercancel"].forEach(function(ev){ btn.addEventListener(ev, stop); });
+  btn.addEventListener("keydown", function(e){ if (e.key === " " || e.key === "Enter"){ e.preventDefault(); if (!e.repeat) start(); } });
+  btn.addEventListener("keyup", function(e){ if (e.key === " " || e.key === "Enter") stop(); });
+  btn.addEventListener("blur", stop);
+  document.querySelectorAll(".ix-chip").forEach(function(c){ c.addEventListener("click", function(){ if (c.getAttribute("role") === "tab"){ c.parentNode.querySelectorAll(".ix-chip").forEach(function(o){ o.setAttribute("aria-pressed","false"); }); c.setAttribute("aria-pressed","true"); } else c.setAttribute("aria-pressed", String(c.getAttribute("aria-pressed") !== "true")); }); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stay Wild · Prototype nhấp được</title>
+<meta name="description" content="Prototype tự chứa (HTML/CSS/JS thuần, chạy offline) cho ba bề mặt: Mobile, Portal, CMS/Admin. Trạng thái: Đã đề xuất, chờ PO duyệt. Mọi dữ liệu là mẫu giả lập.">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/mobile.css">
+<link rel="stylesheet" href="css/web.css">
+</head>
+<body>
+<div id="shell">
+  <header class="topbar" role="banner">
+    <button class="tb-btn" id="side-toggle" aria-label="Mở danh sách màn hình">☰ Màn hình</button>
+    <span class="brand">Stay Wild<small>PROTOTYPE · Đã đề xuất</small></span>
+    <div class="seg" id="surf" role="group" aria-label="Bề mặt"></div>
+    <label class="tb-sel">Nhóm:
+      <select id="persona" aria-label="Nhóm tài khoản"></select>
+    </label>
+    <label class="tb-sel">Trạng thái:
+      <select id="state" aria-label="Trạng thái hiển thị">
+        <option value="ok">Bình thường</option><option value="loading">Đang tải</option>
+        <option value="empty">Rỗng</option><option value="error">Lỗi</option><option value="offline">Ngoại tuyến</option>
+      </select>
+    </label>
+    <button class="tb-btn" id="theme" aria-label="Đổi chế độ sáng/tối">Giao diện</button>
+    <button class="tb-btn" id="notes" aria-pressed="true">Ghi chú story</button>
+    <span class="sample-tag">Dữ liệu mẫu giả lập</span>
+  </header>
+  <div id="body">
+    <aside id="side" aria-label="Danh sách màn hình">
+      <input id="sidesearch" type="search" placeholder="Lọc màn hình hoặc US-xx-yy" aria-label="Lọc màn hình">
+      <div id="sidelist"></div>
+    </aside>
+    <div id="stage" tabindex="-1"></div>
+  </div>
+</div>
+<script src="js/stories.js"></script>
+<script src="js/core.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script src="js/m-onboarding.js"></script>
+<script src="js/m-discover.js"></script>
+<script src="js/m-trip.js"></script>
+<script src="js/m-booking.js"></script>
+<script src="js/m-safety.js"></script>
+<script src="js/m-account.js"></script>
+<script src="js/m-partner.js"></script>
+<script src="js/portal.js"></script>
+<script src="js/admin-ops.js"></script>
+<script src="js/admin-content.js"></script>
+<script src="js/admin-finance.js"></script>
+<script src="js/admin-system.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

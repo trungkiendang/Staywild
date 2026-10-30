@@ -1,0 +1,354 @@
+/*  GENERATED từ design/tokens/tokens.json bằng design/tokens/build.mjs. KHÔNG SỬA TAY. */
+:root {
+  color-scheme: light;
+  --sw-ref-forest-50: #ECF5F2;
+  --sw-ref-forest-100: #D0E8E1;
+  --sw-ref-forest-200: #A6D1C6;
+  --sw-ref-forest-300: #75B3A4;
+  --sw-ref-forest-400: #4A9382;
+  --sw-ref-forest-500: #2F7766;
+  --sw-ref-forest-600: #1F5F51;
+  --sw-ref-forest-700: #174B40;
+  --sw-ref-forest-800: #113A32;
+  --sw-ref-forest-900: #0B2A24;
+  --sw-ref-forest-950: #061A16;
+  --sw-ref-clay-50: #FBF1EA;
+  --sw-ref-clay-100: #F6DFD0;
+  --sw-ref-clay-200: #EDBFA3;
+  --sw-ref-clay-300: #E19A72;
+  --sw-ref-clay-400: #D2774A;
+  --sw-ref-clay-500: #B95C30;
+  --sw-ref-clay-600: #9A4725;
+  --sw-ref-clay-700: #7A381E;
+  --sw-ref-clay-800: #5C2A17;
+  --sw-ref-clay-900: #3E1C10;
+  --sw-ref-stone-0: #FFFFFF;
+  --sw-ref-stone-25: #FAFAF6;
+  --sw-ref-stone-50: #F4F4EE;
+  --sw-ref-stone-100: #EAEBE3;
+  --sw-ref-stone-200: #DBDDD2;
+  --sw-ref-stone-300: #C3C6B8;
+  --sw-ref-stone-400: #A0A496;
+  --sw-ref-stone-500: #7C8174;
+  --sw-ref-stone-600: #5E6358;
+  --sw-ref-stone-700: #474C42;
+  --sw-ref-stone-800: #30342D;
+  --sw-ref-stone-900: #1F221C;
+  --sw-ref-stone-950: #131510;
+  --sw-ref-stone-1000: #0C0E0A;
+  --sw-ref-green-50: #E9F5EA;
+  --sw-ref-green-100: #CDE8CF;
+  --sw-ref-green-200: #A4D6A8;
+  --sw-ref-green-300: #78C07E;
+  --sw-ref-green-500: #2F8A36;
+  --sw-ref-green-600: #26702C;
+  --sw-ref-green-700: #1D5A23;
+  --sw-ref-green-800: #164519;
+  --sw-ref-green-900: #0E2E11;
+  --sw-ref-amber-50: #FFF7E0;
+  --sw-ref-amber-100: #FDEBB0;
+  --sw-ref-amber-200: #F9DB7A;
+  --sw-ref-amber-300: #F2C230;
+  --sw-ref-amber-500: #C58A00;
+  --sw-ref-amber-600: #9A6A00;
+  --sw-ref-amber-700: #7A5300;
+  --sw-ref-amber-800: #5C3E00;
+  --sw-ref-amber-900: #3F2B00;
+  --sw-ref-red-50: #FDECEA;
+  --sw-ref-red-100: #F9D0CB;
+  --sw-ref-red-200: #F4A9A1;
+  --sw-ref-red-300: #EE8A80;
+  --sw-ref-red-500: #D13B2E;
+  --sw-ref-red-600: #B3261E;
+  --sw-ref-red-700: #8E1D17;
+  --sw-ref-red-800: #6B1511;
+  --sw-ref-red-900: #4A0E0B;
+  --sw-ref-blue-50: #E7F2F7;
+  --sw-ref-blue-100: #C9E2EE;
+  --sw-ref-blue-200: #A2CDE2;
+  --sw-ref-blue-300: #7FB5D1;
+  --sw-ref-blue-500: #2B7BA3;
+  --sw-ref-blue-600: #1F6385;
+  --sw-ref-blue-700: #184E69;
+  --sw-ref-blue-800: #123C51;
+  --sw-ref-blue-900: #0D2B3B;
+
+  /* SOS: một bộ duy nhất, không đổi theo chế độ sáng/tối hay theme campaign */
+  --sw-sos-solid: #B3001B;
+  --sw-sos-solid-pressed: #8A0014;
+  --sw-sos-on-solid: #FFFFFF;
+  --sw-sos-surface: #FFF1F0;
+  --sw-sos-on-surface: #4A0008;
+  --sw-sos-border: #B3001B;
+  --sw-sos-received: #0E5A1E;
+  --sw-sos-on-received: #FFFFFF;
+  --sw-sos-pending: #FFD84D;
+  --sw-sos-on-pending: #2B2000;
+  --sw-sos-neutral: #2B2F28;
+  --sw-sos-on-neutral: #FFFFFF;
+  --sw-sos-ring: #FFFFFF;
+
+  /* Màu ngữ nghĩa - chế độ sáng (mặc định) */
+  --sw-color-bg-canvas: #FAFAF6;
+  --sw-color-bg-surface: #FFFFFF;
+  --sw-color-bg-raised: #FFFFFF;
+  --sw-color-bg-sunken: #EAEBE3;
+  --sw-color-bg-scrim: #131510A3;
+  --sw-color-text-primary: #1F221C;
+  --sw-color-text-secondary: #474C42;
+  --sw-color-text-tertiary: #5E6358;
+  --sw-color-text-disabled: #A0A496;
+  --sw-color-text-inverse: #FFFFFF;
+  --sw-color-text-link: #1F5F51;
+  --sw-color-border-subtle: #DBDDD2;
+  --sw-color-border-default: #C3C6B8;
+  --sw-color-border-input: #7C8174;
+  --sw-color-border-strong: #474C42;
+  --sw-color-brand-primary: #1F5F51;
+  --sw-color-brand-primary-hover: #174B40;
+  --sw-color-brand-primary-pressed: #113A32;
+  --sw-color-brand-on-primary: #FFFFFF;
+  --sw-color-brand-subtle: #ECF5F2;
+  --sw-color-brand-on-subtle: #113A32;
+  --sw-color-accent-solid: #9A4725;
+  --sw-color-accent-on-solid: #FFFFFF;
+  --sw-color-accent-subtle: #FBF1EA;
+  --sw-color-accent-on-subtle: #7A381E;
+  --sw-color-success-bg: #E9F5EA;
+  --sw-color-success-fg: #1D5A23;
+  --sw-color-success-border: #78C07E;
+  --sw-color-success-solid: #26702C;
+  --sw-color-success-on-solid: #FFFFFF;
+  --sw-color-warning-bg: #FFF7E0;
+  --sw-color-warning-fg: #5C3E00;
+  --sw-color-warning-border: #F2C230;
+  --sw-color-warning-solid: #F2C230;
+  --sw-color-warning-on-solid: #3F2B00;
+  --sw-color-error-bg: #FDECEA;
+  --sw-color-error-fg: #8E1D17;
+  --sw-color-error-border: #EE8A80;
+  --sw-color-error-solid: #B3261E;
+  --sw-color-error-on-solid: #FFFFFF;
+  --sw-color-info-bg: #E7F2F7;
+  --sw-color-info-fg: #184E69;
+  --sw-color-info-border: #7FB5D1;
+  --sw-color-info-solid: #1F6385;
+  --sw-color-info-on-solid: #FFFFFF;
+  --sw-color-focus-ring: #1F6385;
+
+  /* font */
+  --sw-font-family-sans: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif;
+  --sw-font-family-display: Fraunces, "Noto Serif", Georgia, serif;
+  --sw-font-family-system: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+  --sw-font-family-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --sw-font-weight-regular: 400;
+  --sw-font-weight-medium: 500;
+  --sw-font-weight-semibold: 600;
+  --sw-font-weight-bold: 700;
+  --sw-font-size-caption: 12px;
+  --sw-font-size-body-sm: 14px;
+  --sw-font-size-body: 16px;
+  --sw-font-size-h3: 18px;
+  --sw-font-size-h2: 22px;
+  --sw-font-size-h1: 28px;
+  --sw-font-size-display: 36px;
+  --sw-font-size-display-lg: 48px;
+
+  /* space */
+  --sw-space-0: 0px;
+  --sw-space-1: 4px;
+  --sw-space-2: 8px;
+  --sw-space-3: 12px;
+  --sw-space-4: 16px;
+  --sw-space-5: 20px;
+  --sw-space-6: 24px;
+  --sw-space-8: 32px;
+  --sw-space-10: 40px;
+  --sw-space-12: 48px;
+  --sw-space-16: 64px;
+  --sw-space-20: 80px;
+  --sw-space-0-5: 2px;
+
+  /* radius */
+  --sw-radius-none: 0px;
+  --sw-radius-xs: 4px;
+  --sw-radius-sm: 8px;
+  --sw-radius-md: 12px;
+  --sw-radius-lg: 16px;
+  --sw-radius-xl: 24px;
+  --sw-radius-full: 9999px;
+
+  /* shadow */
+  --sw-shadow-e1: 0px 1px 2px 0px #1F221C1F;
+  --sw-shadow-e2: 0px 2px 6px 0px #1F221C1F, 0px 1px 2px 0px #1F221C14;
+  --sw-shadow-e3: 0px 8px 20px -4px #1F221C29, 0px 2px 6px 0px #1F221C14;
+  --sw-shadow-e4: 0px 20px 40px -8px #1F221C3D, 0px 4px 12px 0px #1F221C1F;
+
+  /* elevation */
+  --sw-z-base: 0;
+  --sw-z-sticky: 100;
+  --sw-z-drawer: 200;
+  --sw-z-modal: 300;
+  --sw-z-toast: 400;
+  --sw-z-tooltip: 500;
+  --sw-z-sos: 1000;
+
+  /* motion */
+  --sw-motion-duration-instant: 80ms;
+  --sw-motion-duration-fast: 150ms;
+  --sw-motion-duration-base: 240ms;
+  --sw-motion-duration-slow: 400ms;
+  --sw-motion-duration-hold: 1500ms;
+  --sw-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --sw-motion-easing-decelerate: cubic-bezier(0, 0, 0, 1);
+  --sw-motion-easing-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --sw-motion-easing-emphasized: cubic-bezier(0.2, 0, 0, 1.2);
+
+  /* breakpoint */
+  --sw-breakpoint-compact: 0px;
+  --sw-breakpoint-sm: 600px;
+  --sw-breakpoint-md: 840px;
+  --sw-breakpoint-lg: 1200px;
+  --sw-breakpoint-xl: 1600px;
+
+  /* size */
+  --sw-size-touch-min: 44px;
+  --sw-size-touch-mobile: 48px;
+  --sw-size-touch-sos: 72px;
+  --sw-size-icon-sm: 16px;
+  --sw-size-icon-md: 20px;
+  --sw-size-icon-lg: 24px;
+  --sw-size-icon-xl: 32px;
+  --sw-size-control-sm: 32px;
+  --sw-size-control-md: 40px;
+  --sw-size-control-lg: 48px;
+  --sw-size-sos-button: 176px;
+  --sw-size-focus-ring: 2px;
+  --sw-size-content-max: 1280px;
+  --sw-size-reading-max: 680px;
+
+  /* opacity */
+  --sw-opacity-disabled: 0.4;
+  --sw-opacity-hover: 0.08;
+  --sw-opacity-pressed: 0.12;
+}
+
+:root[data-theme="light"] { color-scheme: light; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --sw-color-bg-canvas: #131510;
+    --sw-color-bg-surface: #1F221C;
+    --sw-color-bg-raised: #30342D;
+    --sw-color-bg-sunken: #0C0E0A;
+    --sw-color-bg-scrim: #000000B8;
+    --sw-color-text-primary: #F4F4EE;
+    --sw-color-text-secondary: #DBDDD2;
+    --sw-color-text-tertiary: #C3C6B8;
+    --sw-color-text-disabled: #5E6358;
+    --sw-color-text-inverse: #131510;
+    --sw-color-text-link: #A6D1C6;
+    --sw-color-border-subtle: #30342D;
+    --sw-color-border-default: #474C42;
+    --sw-color-border-input: #A0A496;
+    --sw-color-border-strong: #DBDDD2;
+    --sw-color-brand-primary: #75B3A4;
+    --sw-color-brand-primary-hover: #A6D1C6;
+    --sw-color-brand-primary-pressed: #D0E8E1;
+    --sw-color-brand-on-primary: #131510;
+    --sw-color-brand-subtle: #0B2A24;
+    --sw-color-brand-on-subtle: #D0E8E1;
+    --sw-color-accent-solid: #E19A72;
+    --sw-color-accent-on-solid: #131510;
+    --sw-color-accent-subtle: #3E1C10;
+    --sw-color-accent-on-subtle: #EDBFA3;
+    --sw-color-success-bg: #0E2E11;
+    --sw-color-success-fg: #A4D6A8;
+    --sw-color-success-border: #1D5A23;
+    --sw-color-success-solid: #78C07E;
+    --sw-color-success-on-solid: #0E2E11;
+    --sw-color-warning-bg: #3F2B00;
+    --sw-color-warning-fg: #F9DB7A;
+    --sw-color-warning-border: #7A5300;
+    --sw-color-warning-solid: #F2C230;
+    --sw-color-warning-on-solid: #3F2B00;
+    --sw-color-error-bg: #4A0E0B;
+    --sw-color-error-fg: #F4A9A1;
+    --sw-color-error-border: #8E1D17;
+    --sw-color-error-solid: #EE8A80;
+    --sw-color-error-on-solid: #4A0E0B;
+    --sw-color-info-bg: #0D2B3B;
+    --sw-color-info-fg: #A2CDE2;
+    --sw-color-info-border: #184E69;
+    --sw-color-info-solid: #7FB5D1;
+    --sw-color-info-on-solid: #0D2B3B;
+    --sw-color-focus-ring: #7FB5D1;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --sw-color-bg-canvas: #131510;
+  --sw-color-bg-surface: #1F221C;
+  --sw-color-bg-raised: #30342D;
+  --sw-color-bg-sunken: #0C0E0A;
+  --sw-color-bg-scrim: #000000B8;
+  --sw-color-text-primary: #F4F4EE;
+  --sw-color-text-secondary: #DBDDD2;
+  --sw-color-text-tertiary: #C3C6B8;
+  --sw-color-text-disabled: #5E6358;
+  --sw-color-text-inverse: #131510;
+  --sw-color-text-link: #A6D1C6;
+  --sw-color-border-subtle: #30342D;
+  --sw-color-border-default: #474C42;
+  --sw-color-border-input: #A0A496;
+  --sw-color-border-strong: #DBDDD2;
+  --sw-color-brand-primary: #75B3A4;
+  --sw-color-brand-primary-hover: #A6D1C6;
+  --sw-color-brand-primary-pressed: #D0E8E1;
+  --sw-color-brand-on-primary: #131510;
+  --sw-color-brand-subtle: #0B2A24;
+  --sw-color-brand-on-subtle: #D0E8E1;
+  --sw-color-accent-solid: #E19A72;
+  --sw-color-accent-on-solid: #131510;
+  --sw-color-accent-subtle: #3E1C10;
+  --sw-color-accent-on-subtle: #EDBFA3;
+  --sw-color-success-bg: #0E2E11;
+  --sw-color-success-fg: #A4D6A8;
+  --sw-color-success-border: #1D5A23;
+  --sw-color-success-solid: #78C07E;
+  --sw-color-success-on-solid: #0E2E11;
+  --sw-color-warning-bg: #3F2B00;
+  --sw-color-warning-fg: #F9DB7A;
+  --sw-color-warning-border: #7A5300;
+  --sw-color-warning-solid: #F2C230;
+  --sw-color-warning-on-solid: #3F2B00;
+  --sw-color-error-bg: #4A0E0B;
+  --sw-color-error-fg: #F4A9A1;
+  --sw-color-error-border: #8E1D17;
+  --sw-color-error-solid: #EE8A80;
+  --sw-color-error-on-solid: #4A0E0B;
+  --sw-color-info-bg: #0D2B3B;
+  --sw-color-info-fg: #A2CDE2;
+  --sw-color-info-border: #184E69;
+  --sw-color-info-solid: #7FB5D1;
+  --sw-color-info-on-solid: #0D2B3B;
+  --sw-color-focus-ring: #7FB5D1;
+}
+
+/* Kiểu chữ ghép */
+.sw-text-display-lg { font-family: Fraunces, "Noto Serif", Georgia, serif; font-size: 48px; font-weight: 600; line-height: 1.17; letter-spacing: -0.5px; }
+.sw-text-display { font-family: Fraunces, "Noto Serif", Georgia, serif; font-size: 36px; font-weight: 600; line-height: 1.22; letter-spacing: -0.25px; }
+.sw-text-h1 { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 28px; font-weight: 700; line-height: 1.29; letter-spacing: 0px; }
+.sw-text-h2 { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 22px; font-weight: 600; line-height: 1.36; letter-spacing: 0px; }
+.sw-text-h3 { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 18px; font-weight: 600; line-height: 1.44; letter-spacing: 0px; }
+.sw-text-body-lg { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; letter-spacing: 0px; }
+.sw-text-body { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.43; letter-spacing: 0px; }
+.sw-text-label { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 14px; font-weight: 600; line-height: 1.43; letter-spacing: 0.1px; }
+.sw-text-caption { font-family: "Be Vietnam Pro", "Noto Sans", Roboto, "Segoe UI", system-ui, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.5; letter-spacing: 0.2px; }
+.sw-text-sos { font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif; font-size: 18px; font-weight: 700; line-height: 1.33; letter-spacing: 0px; }
+.sw-text-sos-body { font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif; font-size: 16px; font-weight: 500; line-height: 1.5; letter-spacing: 0px; }
+
+/* Giảm chuyển động: tôn trọng cài đặt hệ điều hành (WCAG 2.3.3) */
+@media (prefers-reduced-motion: reduce) {
+  :root { --sw-motion-duration-fast: 0ms; --sw-motion-duration-base: 0ms; --sw-motion-duration-slow: 0ms; }
+}

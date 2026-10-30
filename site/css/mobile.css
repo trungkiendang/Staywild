@@ -1,0 +1,94 @@
+/* Khung điện thoại + mẫu màn hình di động (Khách, Provider, Creator, Người dân). */
+.phone{width:390px;height:800px;border-radius:44px;border:10px solid #1b1d19;background:#1b1d19;box-shadow:var(--sw-shadow-e4);flex:none;position:relative}
+.mobile{position:relative;width:100%;height:100%;border-radius:34px;overflow:hidden;background:var(--sw-color-bg-canvas);display:flex;flex-direction:column;color:var(--sw-color-text-primary)}
+.m-status{height:28px;flex:none;display:flex;justify-content:space-between;align-items:center;padding:0 22px;font-size:12px;font-weight:600;background:var(--sw-color-bg-surface)}
+.m-status .off{color:var(--sw-color-error-fg)}
+.m-bar{flex:none;display:flex;align-items:center;gap:8px;min-height:52px;padding:0 8px 0 4px;background:var(--sw-color-bg-surface);border-bottom:1px solid var(--sw-color-border-subtle)}
+.m-bar h1{font-size:17px;font-weight:600;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:8px}
+.m-bar .ib{width:44px;height:44px;border:0;background:transparent;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;position:relative}
+.m-bar .ib:hover{background:var(--sw-color-bg-sunken)}
+.ib .dot{position:absolute;top:9px;right:9px;width:9px;height:9px;border-radius:50%;background:var(--sw-color-accent-solid);border:2px solid var(--sw-color-bg-surface)}
+.m-body{flex:1;overflow:auto;padding:var(--sw-space-4);display:flex;flex-direction:column;gap:var(--sw-space-4);scrollbar-width:thin}
+.m-body.flush{padding:0;gap:0}
+.m-body.has-fab{padding-bottom:96px}
+.m-nav{flex:none;display:flex;background:var(--sw-color-bg-surface);border-top:1px solid var(--sw-color-border-subtle);padding-bottom:6px}
+.m-nav button{flex:1;border:0;background:transparent;min-height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:11px;font-weight:600;color:var(--sw-color-text-tertiary);cursor:pointer}
+.m-nav button[aria-current="true"]{color:var(--sw-color-brand-primary)}
+.m-nav button[aria-current="true"] .ic{stroke-width:2.25}
+.m-act{flex:none;padding:var(--sw-space-3) var(--sw-space-4);background:var(--sw-color-bg-surface);border-top:1px solid var(--sw-color-border-subtle);display:flex;gap:var(--sw-space-3);align-items:center}
+.m-search{display:flex;align-items:center;gap:8px;min-height:48px;border:1px solid var(--sw-color-border-input);border-radius:var(--sw-radius-full);padding:0 16px;background:var(--sw-color-bg-surface);color:var(--sw-color-text-tertiary);cursor:pointer}
+.m-hscroll{display:flex;gap:var(--sw-space-3);overflow:auto;margin:0 calc(-1*var(--sw-space-4));padding:2px var(--sw-space-4);scrollbar-width:none}
+.m-hscroll>*{flex:none}
+.m-h{display:flex;justify-content:space-between;align-items:baseline}
+.m-h h2{font-size:18px;font-weight:600}
+.m-dest{width:200px}
+.m-dest .c-cover{height:120px}
+.m-dest .b{padding:10px 12px}
+.m-hero{padding:var(--sw-space-5) var(--sw-space-4);border-radius:0;background:linear-gradient(160deg,var(--sw-ref-forest-700),var(--sw-ref-forest-900));color:#fff;position:relative;overflow:hidden}
+.m-hero h1{font-family:var(--sw-font-family-display);font-size:28px;line-height:1.2;font-weight:600;position:relative}
+.m-hero svg.contour{position:absolute;inset:0;width:100%;height:100%;opacity:.25}
+.m-svc{display:flex;gap:12px;padding:12px}
+.m-svc .c-cover{width:84px;height:84px;border-radius:var(--sw-radius-sm);flex:none}
+.m-onb{justify-content:space-between;padding:var(--sw-space-6) var(--sw-space-5)}
+.m-otp{display:flex;gap:8px;justify-content:center}
+.m-otp input{width:46px;height:56px;text-align:center;font-size:22px;font-weight:700;border:1px solid var(--sw-color-border-input);border-radius:var(--sw-radius-sm);background:var(--sw-color-bg-surface)}
+.m-consent{display:flex;gap:12px;padding:14px;border:1px solid var(--sw-color-border-default);border-radius:var(--sw-radius-md);background:var(--sw-color-bg-surface);align-items:flex-start}
+.m-chat{display:flex;flex-direction:column;gap:10px}
+.m-chatin{display:flex;gap:8px;padding:8px 12px;background:var(--sw-color-bg-surface);border-top:1px solid var(--sw-color-border-subtle)}
+.m-chatin input{flex:1;min-height:44px;border:1px solid var(--sw-color-border-input);border-radius:var(--sw-radius-full);padding:0 16px;background:var(--sw-color-bg-canvas)}
+.m-hint{font-size:12px;color:var(--sw-color-text-tertiary)}
+.m-ticket{border-radius:var(--sw-radius-lg);background:var(--sw-color-bg-surface);border:1px solid var(--sw-color-border-default);overflow:hidden}
+.m-ticket .top{background:var(--sw-color-brand-primary);color:var(--sw-color-brand-on-primary);padding:14px 16px}
+.m-ticket .mid{padding:16px;display:flex;flex-direction:column;align-items:center;gap:8px;border-bottom:2px dashed var(--sw-color-border-default)}
+.m-map{flex:1;min-height:0}
+.m-sheet{position:absolute;left:0;right:0;bottom:0;background:var(--sw-color-bg-surface);border-radius:var(--sw-radius-xl) var(--sw-radius-xl) 0 0;box-shadow:var(--sw-shadow-e4);padding:10px 16px 16px;z-index:5}
+.m-qa{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.m-qa button{border:0;background:transparent;display:flex;flex-direction:column;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:8px 0;cursor:pointer;min-height:64px}
+.m-qa .bubble{width:48px;height:48px;border-radius:16px;background:var(--sw-color-brand-subtle);color:var(--sw-color-brand-on-subtle);display:flex;align-items:center;justify-content:center}
+.m-banner-off{background:var(--sw-color-warning-bg);color:var(--sw-color-warning-fg);padding:8px 16px;font-size:13px;display:flex;gap:8px;align-items:center;border-bottom:1px solid var(--sw-color-warning-border);flex:none}
+
+/* ====== KHU VỰC AN TOÀN (SOS): một bộ màu, không theo theme, chữ hệ thống ====== */
+.sos-fab{position:absolute;right:14px;bottom:84px;width:var(--sw-size-touch-sos);height:var(--sw-size-touch-sos);border-radius:50%;background:var(--sw-sos-solid);color:var(--sw-sos-on-solid);border:4px solid var(--sw-sos-ring);box-shadow:0 0 0 2px var(--sw-sos-solid),var(--sw-shadow-e3);font:700 18px/1 system-ui,-apple-system,Roboto,"Segoe UI",sans-serif;z-index:var(--sw-z-sos);cursor:pointer}
+.sos-fab.noNav{bottom:16px}
+.sos-screen{flex:1;overflow:auto;background:var(--sw-sos-surface);color:var(--sw-sos-on-surface);font-family:system-ui,-apple-system,Roboto,"Segoe UI",sans-serif;padding:16px;display:flex;flex-direction:column;gap:14px}
+.sos-bar{flex:none;display:flex;align-items:center;gap:8px;min-height:52px;padding:0 8px;background:var(--sw-sos-neutral);color:var(--sw-sos-on-neutral);font-family:system-ui,-apple-system,Roboto,"Segoe UI",sans-serif;font-weight:700;font-size:17px}
+.sos-bar button{color:var(--sw-sos-on-neutral);background:transparent;border:0;width:44px;height:44px;cursor:pointer}
+.sos-hold{position:relative;width:var(--sw-size-sos-button);height:var(--sw-size-sos-button);margin:4px auto;touch-action:none;user-select:none;-webkit-user-select:none}
+.sos-hold button{position:absolute;inset:0;border-radius:50%;border:4px solid var(--sw-sos-ring);background:var(--sw-sos-solid);color:var(--sw-sos-on-solid);box-shadow:0 0 0 3px var(--sw-sos-solid);font:700 44px/1 system-ui,-apple-system,Roboto,sans-serif;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;touch-action:none}
+.sos-hold button small{font-size:14px;font-weight:700}
+.sos-hold button:active,.sos-hold.holding button{background:var(--sw-sos-solid-pressed)}
+.sos-hold svg{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);pointer-events:none;transform:rotate(-90deg);z-index:2}
+.sos-hold circle{fill:none;stroke-width:8}
+.sos-hold .trk{stroke:rgba(255,255,255,.28)}
+.sos-hold .prg{stroke:var(--sw-sos-ring);stroke-linecap:round}
+.sos-btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;border-radius:12px;border:3px solid var(--sw-sos-neutral);background:#fff;color:var(--sw-sos-neutral);font:700 18px/1 system-ui,-apple-system,Roboto,sans-serif;cursor:pointer;width:100%;text-decoration:none}
+.sos-btn.solid{background:var(--sw-sos-solid);color:var(--sw-sos-on-solid);border-color:var(--sw-sos-ring);box-shadow:0 0 0 2px var(--sw-sos-solid)}
+.sos-btn.call{background:var(--sw-sos-neutral);color:var(--sw-sos-on-neutral)}
+.sos-st{border-radius:12px;padding:14px;font-weight:700;font-size:18px;display:flex;gap:10px;align-items:center}
+.sos-st.sent{background:var(--sw-sos-pending);color:var(--sw-sos-on-pending)}
+.sos-st.recv{background:var(--sw-sos-received);color:var(--sw-sos-on-received)}
+.sos-st.fail{background:var(--sw-sos-neutral);color:var(--sw-sos-on-neutral)}
+.sos-st.fwd{background:#fff;color:var(--sw-sos-on-surface);border:3px solid var(--sw-sos-border)}
+.sos-card{background:#fff;border:2px solid var(--sw-sos-border);border-radius:12px;padding:12px;font-size:16px;font-weight:500}
+.sos-steps{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:16px}
+.sos-steps li{display:flex;gap:10px;align-items:center}
+.sos-steps .d{width:22px;height:22px;border-radius:50%;border:3px solid var(--sw-sos-neutral);flex:none;background:#fff}
+.sos-steps li.done .d{background:var(--sw-sos-received);border-color:var(--sw-sos-received)}
+.sos-steps li.now .d{background:var(--sw-sos-pending);border-color:var(--sw-sos-neutral)}
+.sos-nums{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sos-nums a{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:64px;border-radius:12px;background:var(--sw-sos-neutral);color:#fff;text-decoration:none;font:700 24px system-ui,sans-serif}
+.sos-nums a small{font-size:13px;font-weight:500}
+/* Cảnh báo an toàn thường (không phải SOS) dùng màu cảnh báo */
+.safe-alert{display:flex;gap:10px;padding:12px;border-radius:var(--sw-radius-md);border:1px solid var(--sw-color-warning-border);background:var(--sw-color-warning-bg);color:var(--sw-color-warning-fg)}
+.safe-alert.sev{border-width:2px;border-color:var(--sw-color-error-solid);background:var(--sw-color-error-bg);color:var(--sw-color-error-fg)}
+
+/* Điện thoại thật (viewport hẹp): bỏ viền khung, chiếm toàn màn hình */
+@media (max-width:760px){
+  .phone{width:100%;height:calc(100dvh - 54px);border:0;border-radius:0;background:transparent;box-shadow:none}
+  .mobile{border-radius:0}
+  .m-status{display:none}
+}
+.m-map{position:relative;flex:1;min-height:0}
+.m-map .c-map{position:absolute;inset:0;height:auto!important}
+.m-body>*,.sos-screen>*,.w-main>*{flex-shrink:0}
+.sos-fab.up{bottom:150px}
